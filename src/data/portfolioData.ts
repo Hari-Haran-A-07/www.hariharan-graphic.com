@@ -1,0 +1,837 @@
+import {
+  ProjectItem,
+  ExperienceItem,
+  CertificationItem,
+  EducationItem,
+  MetricItem,
+} from '@/types';
+
+export const profileInfo = {
+  name: "HARI HARAN A",
+  title: "Junior Graphic Designer & Video Editor",
+  tagline: "DESIGN × MOTION × TECHNOLOGY",
+  heroHeadline: "DESIGNING IDEAS INTO VISUAL EXPERIENCES.",
+  heroSubheadline: "I DESIGN VISUAL EXPERIENCES THAT MAKE BRANDS IMPOSSIBLE TO IGNORE.",
+  roles: [
+    "Graphic Designer",
+    "Visual Designer",
+    "UI/UX Designer",
+    "Video Editor",
+    "Creative Technologist",
+  ],
+  location: "Dindigul, Tamil Nadu, India",
+  email: "suryahari971@gmail.com",
+  linkedin: "https://www.linkedin.com/in/ahari-haran07",
+  github: "https://github.com/Hari-Haran-A-07",
+  canvaVaultUrl: "https://www.canva.com/projects",
+  googleDriveVaultUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+  resumePdfUrl: "/assets/Hari_Haran_A_Resume.pdf",
+  bio: "Hari Haran A is a creative, detail-oriented and versatile Junior Graphic Designer & Video Editor with an academic foundation in Computer Science and Business Systems. Merging visual design principles with deep digital engineering understanding, he creates impactful brand identities, engaging social media campaigns, high-converting UI/UX interfaces, and cinematic motion reels.",
+};
+
+export const verifiedMetrics: MetricItem[] = [
+  {
+    id: "m1",
+    value: "22%",
+    label: "Engagement Uplift",
+    sublabel: "Achieved across social media campaigns & digital marketing assets",
+    verifiedSource: "Kieyverse Marketing Campaign",
+  },
+  {
+    id: "m2",
+    value: "30%",
+    label: "Workflow Acceleration",
+    sublabel: "Faster prototype-to-production handoff via modular design systems",
+    verifiedSource: "MITA IT Automations",
+  },
+  {
+    id: "m3",
+    value: "25%",
+    label: "Load Latency Reduction",
+    sublabel: "Optimized responsive assets & modular component rendering",
+    verifiedSource: "Dot Com Infoway",
+  },
+  {
+    id: "m4",
+    value: "8.6",
+    label: "Academic CGPA",
+    sublabel: "B.Tech in Computer Science and Business Systems (2022–2026)",
+    verifiedSource: "SSM Institute of Eng. & Tech.",
+  },
+  {
+    id: "m5",
+    value: "40+",
+    label: "Defects Resolved",
+    sublabel: "Cross-device UI inconsistencies & responsiveness fixes",
+    verifiedSource: "Dot Com Infoway QA",
+  },
+  {
+    id: "m6",
+    value: "99.9%",
+    label: "Uptime & Delivery",
+    sublabel: "Precision in delivering brand assets & digital products on schedule",
+    verifiedSource: "Techzon Wide Delivery",
+  },
+];
+
+export const selectedProjects: ProjectItem[] = [
+  {
+    id: "social-media-strategy-hub",
+    number: "001",
+    title: "SOCIAL MEDIA STRATEGY & CONTENT HUB",
+    subtitle: "Omnichannel Social Content System, Carousels & Motion Preview Engine",
+    category: "SOCIAL MEDIA",
+    year: "2026",
+    client: "Creative Studio & Omnichannel Brands",
+    tools: ["Figma", "Canva", "Adobe Photoshop", "Premiere Pro", "React.js"],
+    thumbnail: "social-media-hub",
+    badge: "Featured System",
+    featured: true,
+    layoutStyle: "full-width",
+    accentColor: "#A100FF",
+    canvaUrl: "https://www.canva.com/projects",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    figmaUrl: "https://www.figma.com",
+    summary:
+      "A complete social media creative infrastructure designed to produce high-engagement Instagram/LinkedIn carousel systems, promotional motion reels, aspect-ratio calibrated templates, and a dynamic creative preview dashboard.",
+    problem:
+      "Omnichannel brands face fragmented creative consistency, misaligned typography hierarchies across different aspect ratios (9:16, 1:1, 4:5, 16:9), and slow asset approval workflows.",
+    concept:
+      "Constructed a unified design framework that bridges static carousel design with motion video rhythm, utilizing standardized typography tokens, dynamic contrast ratios, and modular visual hooks.",
+    visualDirection:
+      "Ultra-modern editorial aesthetic with high-contrast monochrome foundations, vibrant violet-to-cyan focal gradients, bold display numbers, and tactile UI card frames.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Headline Hook & Slide Numbers", sample: "THE 5 RULES OF RETENTION", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Body Copy & Key Takeaways", sample: "Visual hierarchy dictates user attention within the first 1.2 seconds.", weight: "Medium 500" },
+      { fontFamily: "JetBrains Mono", usage: "Metadata & Slide Timings", sample: "SLIDE 01/08 • 1080x1350px", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Obsidian Core", hex: "#0A0A0A", role: "Primary Background" },
+      { name: "Electric Violet", hex: "#A100FF", role: "Focal Accent & Highlights" },
+      { name: "Cyan Spark", hex: "#00E5FF", role: "Data Visualization & Key Badges" },
+      { name: "Pure White", hex: "#FFFFFF", role: "High-Contrast Typography" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Content Taxonomy & Hook Architecture",
+        description: "Formulated carousel slide patterns: 1 Hook -> 2 Agitate -> 3 Framework -> 4 Proof -> 5 CTA.",
+        deliverables: ["Wireframe Storyboards", "Hook Matrix", "Pacing Guidelines"],
+      },
+      {
+        title: "02 — Visual Grid & Aspect-Ratio Calibration",
+        description: "Engineered Figma & Canva component templates formatted for Instagram portrait (1080x1350) and LinkedIn documents.",
+        deliverables: ["Figma Component Library", "Canva Master Templates", "Export Presets"],
+      },
+      {
+        title: "03 — Motion Reel Transitions & Audio Sync",
+        description: "Edited micro-video snippets in Premiere Pro & CapCut synced to beat drops and on-screen kinetic captions.",
+        deliverables: ["9:16 Video Reels", "Sound Wave Visualizers", "CapCut Presets"],
+      },
+      {
+        title: "04 — Creative Preview Dashboard",
+        description: "Built an interactive React interface allowing stakeholders to preview carousels in real-time before publication.",
+        deliverables: ["React Interactive Previewer", "Asset Downloader", "Approval Pipeline"],
+      },
+    ],
+    keyFeatures: [
+      "10+ Multi-slide carousel systems with high visual retention",
+      "Aspect-ratio auto-fitting (1:1, 4:5, 9:16, 16:9)",
+      "Motion reel transition mockups with kinetic captioning",
+      "Instant export to Canva, Figma, and print-ready formats",
+      "Interactive social feed simulator for live campaign staging",
+    ],
+    results: [
+      "22% verified uplift in user engagement and click-through rates",
+      "Reduced content turnaround time from 4 days to under 6 hours",
+      "Zero typography distortion across mobile and tablet viewports",
+    ],
+    metrics: [
+      "22% Engagement Growth",
+      "100% Mobile Optimized",
+      "4 Multi-Format Templates",
+    ],
+  },
+  {
+    id: "kieyverse-brand-portal",
+    number: "002",
+    title: "KIEYVERSE DIGITAL MARKETING IDENTITY",
+    subtitle: "Complete Brand Identity, Corporate Collateral & Web Marketing Assets",
+    category: "BRANDING",
+    year: "2026",
+    client: "Kieyverse Technologies",
+    tools: ["Adobe Photoshop", "Adobe Illustrator", "Figma", "HTML5", "CSS3", "React.js"],
+    thumbnail: "kieyverse-brand",
+    badge: "Agency Case Study",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#7C3AED",
+    canvaUrl: "https://www.canva.com/projects",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    githubUrl: "https://github.com/Hari-Haran-A-07/kiey-verse.in",
+    liveDemoUrl: "https://kiey-verse.in",
+    summary:
+      "Full corporate brand identity overhaul for Kieyverse, encompassing logo geometry, brand guidelines, marketing brochures, service one-pagers, display banners, and a responsive web portal.",
+    problem:
+      "Kieyverse required a modern, enterprise-grade brand presence to pitch tech and digital marketing solutions to international clients with confidence and authority.",
+    concept:
+      "The visual identity balances technological precision with artistic sophistication, using geometric logomarks, deep cosmic purples, and razor-sharp print and web layouts.",
+    visualDirection:
+      "Minimalist tech corporate styling, structured grid alignments, polished typography scales, and high-impact digital promotional collateral.",
+    typography: [
+      { fontFamily: "Syne", usage: "Corporate Wordmark & Master Display", sample: "KIEYVERSE INNOVATION", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Marketing Collateral & Proposals", sample: "Next-generation digital marketing and frontend engineering.", weight: "Regular 400" },
+      { fontFamily: "JetBrains Mono", usage: "Technical Service Specifications", sample: "SPEC-2026 // B2B PORTAL", weight: "Medium 500" },
+    ],
+    colorSystem: [
+      { name: "Deep Space", hex: "#050505", role: "Brand Base" },
+      { name: "Kiey Purple", hex: "#7C3AED", role: "Primary Signature Hue" },
+      { name: "Neon Lilac", hex: "#C084FC", role: "Secondary Accents & Highlights" },
+      { name: "Titanium White", hex: "#F5F5F5", role: "Typography & Clean Space" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Logo Geometrics & Vector Grid",
+        description: "Created scalable vector emblems in Illustrator with golden ratio proportions and responsive lockups.",
+        deliverables: ["Primary & Secondary Logomarks", "Favicon Suite", "Clearspace Guidelines"],
+      },
+      {
+        title: "02 — Print & Corporate Collateral Suite",
+        description: "Engineered CMYK print-ready brochures, business cards, letterheads, and service one-pagers.",
+        deliverables: ["Print-Ready PDF Kits", "Vector Infographics", "Brand Identity Manual"],
+      },
+      {
+        title: "03 — Web Banners & Social Campaign Assets",
+        description: "Designed 30+ promotional digital banners, LinkedIn banners, and promotional carousels.",
+        deliverables: ["Ad Creatives", "Display Network Sets", "Social Cover Templates"],
+      },
+      {
+        title: "04 — High-Performance Web Portal",
+        description: "Implemented the official React web portal with 28% reduced latency and 22% engagement uplift.",
+        deliverables: ["React Web Platform", "SEO Metadata Setup", "Interactive Services Catalog"],
+      },
+    ],
+    keyFeatures: [
+      "Comprehensive 32-page corporate brand guideline manual",
+      "Vector logo suite with dark, light, monochrome, and inverted lockups",
+      "Print-ready CMYK brochures and trade show one-pagers",
+      "Digital ad creative templates in all standard IAB display ratios",
+      "Live production website at kiey-verse.in",
+    ],
+    results: [
+      "22% verified increase in customer engagement and inquiries",
+      "28% reduction in initial webpage load latency",
+      "100% brand consistency achieved across all digital and print touchpoints",
+    ],
+    metrics: [
+      "22% Engagement Uplift",
+      "28% Faster Page Load",
+      "32-Page Brand Book",
+    ],
+  },
+  {
+    id: "sambaleaf-cloud-kitchen",
+    number: "003",
+    title: "SAMBALEAF CLOUD KITCHEN",
+    subtitle: "Culinary Brand Identity, Vibrant Food Visuals & Digital Ordering Experience",
+    category: "BRANDING",
+    year: "2025",
+    client: "Sambaleaf Gourmet Kitchen",
+    tools: ["Figma", "Adobe Illustrator", "Photoshop", "React.js", "Node.js", "MongoDB"],
+    thumbnail: "sambaleaf-kitchen",
+    badge: "Brand & UI/UX",
+    featured: true,
+    layoutStyle: "portrait",
+    accentColor: "#FF4D00",
+    canvaUrl: "https://www.canva.com/projects",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    figmaUrl: "https://www.figma.com",
+    summary:
+      "Vibrant culinary brand identity and UI/UX ordering system for a gourmet cloud kitchen, combining organic leaf aesthetics with appetizing fiery color palettes and seamless digital ordering.",
+    problem:
+      "Cloud kitchens depend entirely on digital visuals to evoke taste, appetite, and trust since customers cannot physically visit a dining room.",
+    concept:
+      "Designed a sensory-rich brand system that uses warm spice tones, rich textures, enticing food photography mockups, and a frictionless 3-step checkout flow.",
+    visualDirection:
+      "Warm, fiery, modern Indian gourmet tone. Rich turmeric, spicy chili orange, and forest leaf green accents paired with deep charcoal backdrops.",
+    typography: [
+      { fontFamily: "Syne", usage: "Gourmet Menu Titles & Restaurant Signage", sample: "SAMBALEAF SIGNATURES", weight: "Bold 700" },
+      { fontFamily: "Space Grotesk", usage: "Price Tags & Category Tabs", sample: "ROYAL BIRYANI • ₹349", weight: "Medium 500" },
+      { fontFamily: "Inter", usage: "Dish Descriptions & Ingredient Lists", sample: "Slow-cooked aromatic spices infused in organic banana leaf wraps.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Chili Flame", hex: "#FF4D00", role: "Primary Appetite Trigger" },
+      { name: "Leaf Green", hex: "#10B981", role: "Organic & Fresh Accents" },
+      { name: "Turmeric Gold", hex: "#F59E0B", role: "Special Offers & Badges" },
+      { name: "Charcoal Slate", hex: "#121212", role: "Menu Background" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Culinary Identity & Moodboarding",
+        description: "Explored organic leaf motifs intertwined with traditional Indian spice aesthetics.",
+        deliverables: ["Brand Moodboard", "Emblem Sketches", "Packaging Mockups"],
+      },
+      {
+        title: "02 — Menu Cards & Packaging Design",
+        description: "Created tamper-evident box packaging, takeaway bags, and QR menu collateral.",
+        deliverables: ["Packaging Die-lines", "Printable QR Stands", "Digital Menu Cards"],
+      },
+      {
+        title: "03 — Digital Ordering UI/UX Wireframes",
+        description: "Designed high-conversion mobile ordering interface with one-click dish customization.",
+        deliverables: ["Figma Wireframes", "Interactive Prototype", "Design System"],
+      },
+    ],
+    keyFeatures: [
+      "Custom food photography treatment & appetizing visual filters",
+      "Dynamic menu card layout with dietary allergen badges",
+      "Mobile-first ordering UI with live order tracking visuals",
+      "Complete packaging system (boxes, pouches, labels, tape)",
+    ],
+    results: [
+      "Zero drop-off during 3-step checkout prototype tests",
+      "Consistent visual identity across Swiggy, Zomato, and direct web",
+    ],
+    metrics: [
+      "3-Step Fast Checkout",
+      "100% Vector Packaging",
+      "Complete Brand Suite",
+    ],
+  },
+  {
+    id: "luxury-raw-visuals",
+    number: "004",
+    title: "LUXURY.RAW E-COMMERCE EXPERIENCE",
+    subtitle: "High-End Luxury Visual Design, Editorial Product Cards & Dark Mode Showcase",
+    category: "UI/UX",
+    year: "2026",
+    client: "Luxury.Raw Haute Couture",
+    tools: ["Figma", "Adobe Photoshop", "React.js", "Spring Boot", "CSS3"],
+    thumbnail: "luxury-raw",
+    badge: "Editorial Luxury",
+    featured: true,
+    layoutStyle: "landscape",
+    accentColor: "#F5F5F5",
+    githubUrl: "https://github.com/Hari-Haran-A-07/Lux.raw",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    summary:
+      "Editorial, dark-mode luxury e-commerce experience designed for high-value merchandise, featuring razor-sharp product cards, minimal typography hierarchy, fluid hover interactions, and microservices checkout.",
+    problem:
+      "Luxury buyers expect an emotional, cinematic browsing experience akin to high-fashion print magazines rather than crowded retail marketplaces.",
+    concept:
+      "Eliminated all visual clutter. Utilized large monochrome imagery, generous negative space, subtle gold/titanium micro-lines, and slow graceful transitions.",
+    visualDirection:
+      "Monochromatic haute-couture editorial. Ultra-deep blacks, muted silver borders, titanium typography, and high-grain product spotlights.",
+    typography: [
+      { fontFamily: "Syne", usage: "Editorial Collection Titles", sample: "CHRONOGRAPH VOL. 07", weight: "SemiBold 600" },
+      { fontFamily: "Space Grotesk", usage: "Product Specifications & Price", sample: "USD $4,250 • LIMITED TO 50 UNITS", weight: "Regular 400" },
+      { fontFamily: "Inter", usage: "Artisanal Storytelling", sample: "Handcrafted from aerospace-grade titanium with sapphire crystal.", weight: "Light 300" },
+    ],
+    colorSystem: [
+      { name: "Absolute Black", hex: "#000000", role: "Canvas Background" },
+      { name: "Titanium Mist", hex: "#E5E5E5", role: "Primary Text" },
+      { name: "Muted Chrome", hex: "#404040", role: "Grid Dividers" },
+      { name: "Gold Dust", hex: "#D4AF37", role: "Exclusivity Seal" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Editorial Visual Language",
+        description: "Created oversized typography layouts inspired by Vogue and high-fashion ateliers.",
+        deliverables: ["Visual Moodboard", "Typography Specs", "Grid Architecture"],
+      },
+      {
+        title: "02 — Product Presentation & Interaction Design",
+        description: "Engineered 360-degree product hover states, smooth image sliders, and sticky detail panels.",
+        deliverables: ["Figma Interaction Kit", "Micro-Animations", "Card Variants"],
+      },
+      {
+        title: "03 — Full-Stack Implementation",
+        description: "Connected the React frontend to Spring Boot microservices with sub-20ms checkout validation.",
+        deliverables: ["Production Storefront", "Secure Checkout", "Inventory Sync"],
+      },
+    ],
+    keyFeatures: [
+      "Editorial magazine layout with oversized product photography",
+      "Dynamic multi-angle product preview with zoom lens",
+      "Sub-20ms cart checkout validation speed",
+      "Zero clutter dark-mode aesthetic with custom audio micro-feedback",
+    ],
+    results: [
+      "Sub-20ms cart transaction speed",
+      "Praise for high-fashion aesthetic across design showcases",
+    ],
+    metrics: [
+      "Sub-20ms Cart Speed",
+      "100% Dark Editorial",
+      "Zero Clutter UI",
+    ],
+  },
+  {
+    id: "hmd-hire-my-driver",
+    number: "005",
+    title: "HMD — HIRE MY DRIVER UI/UX",
+    subtitle: "On-Demand Chauffeur Booking App, Driver Profiles & Trip Tracking Flow",
+    category: "UI/UX",
+    year: "2025",
+    client: "HMD Mobility Services",
+    tools: ["Figma", "Adobe Illustrator", "MERN Stack", "Responsive Prototyping"],
+    thumbnail: "hmd-mobility",
+    badge: "Mobile UI/UX",
+    featured: true,
+    layoutStyle: "magazine",
+    accentColor: "#00E5FF",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    figmaUrl: "https://www.figma.com",
+    summary:
+      "Comprehensive mobile-first UI/UX design and prototyping for an on-demand driver hiring platform, featuring verified chauffeur profiles, instant fare calculation, real-time trip tracking, and driver rating UI.",
+    problem:
+      "Users hiring temporary drivers need immediate verification of credentials, crystal-clear pricing, and real-time safety tracking without cumbersome onboarding.",
+    concept:
+      "Designed a clean, trust-inspiring mobile interface featuring badge-verified driver cards, live GPS map overlays, emergency SOS triggers, and one-tap re-booking.",
+    visualDirection:
+      "Crisp safety-first mobility UI. Electric cyan accents on dark graphite cards, clear typography badges, and smooth tactile buttons.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Booking Headers & ETA Timers", sample: "CHAUFFEUR ARRIVING IN 4 MIN", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Profile Details & Reviews", sample: "Verified Commercial License • 4.9 ★ (342 Trips)", weight: "Medium 500" },
+      { fontFamily: "JetBrains Mono", usage: "Trip ID & Telemetry", sample: "TRIP #HMD-9821 // OTP: 4092", weight: "Medium 500" },
+    ],
+    colorSystem: [
+      { name: "Deep Graphite", hex: "#0D0D0D", role: "Mobile Viewport Surface" },
+      { name: "Safety Cyan", hex: "#00E5FF", role: "Primary Action & Live GPS" },
+      { name: "Emerald Verified", hex: "#10B981", role: "Driver Verification Badges" },
+      { name: "Clean White", hex: "#FFFFFF", role: "Primary Readable Text" },
+    ],
+    designProcess: [
+      {
+        title: "01 — User Journey & Persona Mapping",
+        description: "Mapped 3 critical flows: Immediate City Trip, Outstation Booking, and Corporate Chauffeur.",
+        deliverables: ["User Journey Maps", "Information Architecture", "Wireframe Flows"],
+      },
+      {
+        title: "02 — Component Design & Verification UI",
+        description: "Created modular driver card components displaying police clearance, ratings, and vehicle expertise.",
+        deliverables: ["Figma Component Library", "Driver Card Variants", "Rating System"],
+      },
+      {
+        title: "03 — Interactive Prototype & Map Integration",
+        description: "Built high-fidelity mobile prototype with interactive trip status animations.",
+        deliverables: ["Figma Clickable Prototype", "Map UI Overlays", "SOS Safety Flow"],
+      },
+    ],
+    keyFeatures: [
+      "Verified driver profile cards with photo, background-check badge, and ratings",
+      "Live interactive GPS trip tracking mockup with ETA calculations",
+      "Transparent fare estimate breakdown with instant promo code application",
+      "SOS emergency trigger and one-tap live trip sharing with family",
+    ],
+    results: [
+      "30% workflow improvement from prototype to production specifications",
+      "Unanimous positive user feedback during pilot usability tests",
+    ],
+    metrics: [
+      "30% Workflow Boost",
+      "4.9★ UI Satisfaction",
+      "5 Core Mobile Flows",
+    ],
+  },
+  {
+    id: "v2v-telemetry-dashboard",
+    number: "006",
+    title: "REAL-TIME V2V TELEMETRY INTERFACE",
+    subtitle: "Vehicle-to-Vehicle Collision Avoidance, Map Telematics & Node Visualizer",
+    category: "WEB",
+    year: "2025",
+    client: "Automotive IoT Research",
+    tools: ["Figma", "Adobe Illustrator", "Python", "Socket Programming", "React.js"],
+    thumbnail: "v2v-telemetry",
+    badge: "IoT Telematics",
+    featured: false,
+    layoutStyle: "split-screen",
+    accentColor: "#FF4D00",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    summary:
+      "Futuristic telemetry and diagnostic interface for real-time vehicle-to-vehicle communication, collision warning indicators, live node proximity radar, and microsecond packet telemetry.",
+    problem:
+      "Automotive telematics systems generate massive streams of raw socket data that must be rendered intuitively without overwhelming test operators or vehicle pilots.",
+    concept:
+      "Engineered an aerospace-inspired HUD dashboard that translates complex multi-threaded socket packets into immediate visual warnings, radar vectors, and telemetry graphs.",
+    visualDirection:
+      "High-tech mission control aesthetic. Dark radar grids, hazard orange warning pulses, neon cyan node beacons, and monospace telemetry metrics.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Telemetry Dashboard Headers", sample: "V2V ACTIVE RADAR: MESH DENSITY 14 NODES", weight: "Bold 700" },
+      { fontFamily: "JetBrains Mono", usage: "Live Telemetry & Packet Data", sample: "NODE_04 // DISTANCE: 12.4M // LATENCY: 3.8MS", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Cockpit Black", hex: "#080808", role: "HUD Background" },
+      { name: "Hazard Orange", hex: "#FF4D00", role: "Proximity Alerts & Warnings" },
+      { name: "Radar Cyan", hex: "#00E5FF", role: "Connected Node Beacons" },
+      { name: "Telemetry Muted", hex: "#888888", role: "Background Grid Lines" },
+    ],
+    keyFeatures: [
+      "Interactive 2D radar screen mapping surrounding vehicle nodes",
+      "Sub-5ms telemetry broadcast latency indicators",
+      "Dynamic audio-visual collision avoidance alert triggers",
+      "Packet loss diagnostic graphs with live frame validation",
+    ],
+    results: [
+      "Sub-5ms telemetry rendering between node clusters",
+      "Zero packet drop rate under simulated high mesh density",
+    ],
+    metrics: [
+      "Sub-5ms Latency",
+      "100% Packet Accuracy",
+      "Real-Time Radar HUD",
+    ],
+  },
+  {
+    id: "tech-lms-platform",
+    number: "007",
+    title: "TECH LMS ENTERPRISE LEARNING PORTAL",
+    subtitle: "Educational UI, Course Cards, Automated KYC Verification & RBAC Dashboard",
+    category: "WEB",
+    year: "2026",
+    client: "Enterprise EdTech",
+    tools: ["Figma", "React.js", "Spring Boot", "Python", "MongoDB", "OpenAPI"],
+    thumbnail: "tech-lms",
+    badge: "Enterprise EdTech",
+    featured: false,
+    layoutStyle: "portrait",
+    accentColor: "#A100FF",
+    githubUrl: "https://github.com/Hari-Haran-A-07/Tech.lms",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    summary:
+      "Enterprise learning management system featuring modular course cards, interactive student progress visualizations, asynchronous KYC student verification, and role-based permissions.",
+    problem:
+      "EdTech portals frequently suffer from confusing navigation hierarchies and slow document verification for enterprise student enrollment.",
+    concept:
+      "Created an intuitive student-first UI with gamified progress dials, instant certificate generators, and automated KYC status banners backed by 88% test coverage.",
+    visualDirection:
+      "Modern academic enterprise UI. Clean dark slate cards, purple progress indicators, accessible typography scales, and intuitive course preview drawers.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Course Titles & Module Headings", sample: "ADVANCED GENERATIVE AI SYSTEMS", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Curriculum Details & Transcripts", sample: "12 Modules • 48 Hours • Verified Industry Certificate", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Academic Dark", hex: "#0E0E10", role: "Portal Background" },
+      { name: "Mastery Purple", hex: "#A100FF", role: "Active Progress & Badges" },
+      { name: "Success Mint", hex: "#10B981", role: "KYC Verified Indicator" },
+    ],
+    keyFeatures: [
+      "Dynamic interactive course card grid with video preview modals",
+      "Real-time KYC verification progress tracker",
+      "Role-Based Access Control (RBAC) admin controls",
+      "Interactive curriculum roadmap with milestone unlocks",
+    ],
+    results: [
+      "88% automated test suite coverage achieved",
+      "Under 2-second automated document validation pipeline",
+    ],
+    metrics: [
+      "88% Test Coverage",
+      "<2s KYC Speed",
+      "Enterprise RBAC",
+    ],
+  },
+  {
+    id: "motion-reels-visuals-2026",
+    number: "008",
+    title: "KINETIC MOTION REELS & VIDEO SHOWCASE",
+    subtitle: "Short-Form Video Edits, Sound-Synced Transitions & Product Teasers",
+    category: "MOTION",
+    year: "2026",
+    client: "Creative Brands & Agency Clients",
+    tools: ["Adobe Premiere Pro", "After Effects", "CapCut", "DaVinci Resolve", "Canva"],
+    thumbnail: "motion-reels",
+    badge: "Motion Lab",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#FF4D00",
+    canvaUrl: "https://www.canva.com/projects",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    summary:
+      "A cinematic compilation of high-energy social media reels, product walkthrough videos, motion poster typography, and beat-synchronized visual cuts engineered for maximum retention.",
+    problem:
+      "Audience drop-off in short-form video occurs within the first 1.5 seconds if pacing, visual transitions, and audio sync are not meticulously art-directed.",
+    concept:
+      "Applied strict visual rhythm principles: dynamic speed ramping, custom match-cuts, kinetic text overlays, and bass-aligned SFX to maximize watch time.",
+    visualDirection:
+      "Fast-paced cinematic editorial. Glitch transitions, seamless zoom transitions, 3D text tracking, and punchy audio-visual synchronization.",
+    typography: [
+      { fontFamily: "Syne", usage: "On-Screen Kinetic Impact Words", sample: "UNSTOPPABLE MOTION", weight: "Bold 800" },
+      { fontFamily: "Space Grotesk", usage: "Video Captions & Lower Thirds", sample: "HARI HARAN • VIDEO EDITOR", weight: "Bold 700" },
+    ],
+    colorSystem: [
+      { name: "Cinema Black", hex: "#030303", role: "Letterbox Canvas" },
+      { name: "Motion Flame", hex: "#FF4D00", role: "Focal Transitions" },
+      { name: "Neon Glow", hex: "#00E5FF", role: "Kinetic Captions" },
+    ],
+    keyFeatures: [
+      "Short-form Instagram Reels & YouTube Shorts with 85%+ retention",
+      "Precision sound design and beat-matched cuts",
+      "Product teaser animations and 3D camera pan simulations",
+      "Social media video templates ready for client repurposing",
+    ],
+    results: [
+      "Consistently achieved higher retention rates on social platforms",
+      "Rapid workflow using pre-configured CapCut and Premiere Pro presets",
+    ],
+    metrics: [
+      "85%+ Retention Rate",
+      "Sound-Synced Pacing",
+      "Multi-Platform 9:16",
+    ],
+  },
+  {
+    id: "ai-creative-explorations",
+    number: "009",
+    title: "AI × DESIGN EXPERIMENTAL SYSTEMS",
+    subtitle: "Generative Art Direction, Prompt Engineering Pipelines & Hybrid Media",
+    category: "AI CREATIVE",
+    year: "2026",
+    client: "Creative AI Research",
+    tools: ["Adobe Firefly", "Runway", "Kling", "ChatGPT", "Photoshop", "Illustrator"],
+    thumbnail: "ai-explorations",
+    badge: "AI × Design",
+    featured: true,
+    layoutStyle: "magazine",
+    accentColor: "#00E5FF",
+    canvaUrl: "https://www.canva.com/projects",
+    driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
+    summary:
+      "Experimental visual project exploring the intersection of generative AI algorithms and traditional art direction: prompt engineering, image synthesis, upscaling, vectorization, and video generation.",
+    problem:
+      "Raw AI-generated imagery often lacks consistent art direction, suffers from anatomical defects, and fails brand coherence without expert designer intervention.",
+    concept:
+      "Pioneered a hybrid workflow: Designer-guided prompt architecture -> Multiple seed generations -> Manual Photoshop compositing -> Color grading -> Final vector integration.",
+    visualDirection:
+      "Futuristic surrealism, cybernetic aesthetics, volumetric lighting, hyper-detailed texture rendering, and geometric balance.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "AI Prompt Parameter Tags", sample: "--AR 16:9 --V 6.0 --STYLIZED 750", weight: "Medium 500" },
+      { fontFamily: "JetBrains Mono", usage: "Generation Seeds & Pipeline Logic", sample: "PROMPT_ENGINE // SEED #89410294", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Void Dark", hex: "#060608", role: "AI Canvas Base" },
+      { name: "Synthetic Cyan", hex: "#00E5FF", role: "Neural Node Accent" },
+      { name: "Plasma Violet", hex: "#A100FF", role: "Latent Space Gradient" },
+    ],
+    keyFeatures: [
+      "Multi-stage prompt generation pipeline with parameter tuning",
+      "Hybrid retouching workflow eliminating AI artifacts",
+      "Motion generation using Runway Gen-2 & Kling for living posters",
+      "Brand-aligned creative assets ready for commercial deployment",
+    ],
+    results: [
+      "10x acceleration in visual concept prototyping",
+      "Seamless integration into production branding and campaign workflows",
+    ],
+    metrics: [
+      "10x Ideation Speed",
+      "Zero AI Artifacts",
+      "Runway + Firefly + Kling",
+    ],
+  },
+];
+
+export const experienceTimeline: ExperienceItem[] = [
+  {
+    id: "exp-techzon",
+    company: "TECHZON WIDE PVT. LTD.",
+    role: "Web Developer & Team Lead / Graphic Designer",
+    location: "Bangalore, India",
+    period: "Jun 2026 – Present",
+    isCurrent: true,
+    highlights: [
+      "Led digital visual branding and web development workflows, creating high-impact digital collateral, pitch decks, and responsive web assets.",
+      "Spearheaded design reviews and engineering sprints, authoring rigorous visual guidelines and technical specifications.",
+      "Engineered full-stack and front-end architectures maintaining 99.9% platform availability and 32% faster server response times.",
+      "Collaborated with cross-functional creative and technical teams to maintain visual fidelity from Figma to live deployment.",
+    ],
+    technologies: [
+      "Graphic Design",
+      "Figma",
+      "Adobe Creative Suite",
+      "React.js",
+      "Team Leadership",
+      "Agile/Scrum",
+      "UI Guidelines",
+    ],
+    metricProof: "99.9% Platform Availability & Leadership",
+  },
+  {
+    id: "exp-kieyverse",
+    company: "KIEYVERSE",
+    role: "Front-End Developer & Digital Marketing Associate",
+    location: "Remote",
+    period: "Feb 2026 – Present",
+    isCurrent: true,
+    highlights: [
+      "Designed and produced high-engagement digital marketing creatives, Instagram/LinkedIn carousels, promotional banners, and social reels.",
+      "Achieved a 22% verified engagement uplift across digital campaigns through strategic visual storytelling and conversion-focused layouts.",
+      "Constructed the official corporate React web portal, reducing page-load latency by 28% with mobile-first responsive architecture.",
+      "Authored brand guideline manuals, corporate typography scales, and modular marketing asset kits for rapid campaign turnaround.",
+    ],
+    technologies: [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Canva",
+      "Social Media Creatives",
+      "React.js",
+      "SEO Architecture",
+      "Marketing Collateral",
+    ],
+    metricProof: "22% Engagement Uplift & 28% Latency Reduction",
+  },
+  {
+    id: "exp-dci",
+    company: "DOT COM INFOWAY",
+    role: "React.js Intern",
+    location: "Madurai, India",
+    period: "Jul 2025 – Oct 2025",
+    isCurrent: false,
+    certificateUrl: "/assets/certificates/dci-certificate.png",
+    highlights: [
+      "Designed and developed modular, accessible React user interfaces connected to backend RESTful web services.",
+      "Improved asynchronous data rendering performance by 25% across high-traffic user dashboards.",
+      "Diagnosed and remediated 40+ software UI defects and cross-browser rendering inconsistencies.",
+      "Created structured design-to-code component documentation and automated unit testing suites.",
+    ],
+    technologies: [
+      "React.js",
+      "JavaScript ES6+",
+      "HTML5/CSS3",
+      "REST APIs",
+      "Cross-Browser QA",
+      "UI Optimization",
+    ],
+    metricProof: "25% Load Speedup & 40+ Defects Fixed",
+  },
+  {
+    id: "exp-mita",
+    company: "MITA IT AUTOMATIONS PVT. LTD.",
+    role: "UI/UX & Graphic Design Intern",
+    location: "Dindigul, India",
+    period: "2024",
+    isCurrent: false,
+    highlights: [
+      "Mapped comprehensive user journeys, designed high-fidelity wireframes, and constructed responsive interactive prototypes.",
+      "Accelerated prototype-to-production implementation speed by 30% through modular component specifications and design tokens.",
+      "Collaborated closely with senior engineering leads to establish enterprise UI guidelines and accessibility benchmarks.",
+      "Prepared digital marketing graphics, client presentation decks, and product feature infographics.",
+    ],
+    technologies: [
+      "UI/UX Design",
+      "Figma",
+      "Wireframing",
+      "Graphic Design",
+      "Prototyping",
+      "Design Systems",
+    ],
+    metricProof: "30% Prototype-to-Production Speedup",
+  },
+];
+
+export const educationList: EducationItem[] = [
+  {
+    id: "edu-btech",
+    institution: "SSM INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+    degree: "Bachelor of Technology (B.Tech)",
+    field: "Computer Science and Business Systems",
+    location: "Dindigul, Tamil Nadu, India",
+    period: "2022 – 2026",
+    score: "8.6 / 10",
+    scoreLabel: "CGPA",
+    highlights: [
+      "Academic foundation combining core Computer Science with Enterprise Business Systems, Product Strategy, and Digital Media.",
+      "Maintained top-tier academic standing with a verified cumulative CGPA of 8.6/10.",
+      "Active designer and developer for university creative teams, symposium identities, and technical research publications.",
+    ],
+  },
+  {
+    id: "edu-hsc",
+    institution: "ST. MARY'S HIGHER SECONDARY SCHOOL",
+    degree: "Higher Secondary Certificate (HSC)",
+    field: "Science & Mathematics Stream",
+    location: "Dindigul, Tamil Nadu, India",
+    period: "Graduated 2022",
+    score: "First Class with Distinction",
+    scoreLabel: "Grade",
+    highlights: [
+      "Completed Higher Secondary education with focus on Advanced Mathematics, Physics, and Computer Science fundamentals.",
+      "Excellence in visual arts, technical drawing, and analytical problem solving.",
+    ],
+  },
+];
+
+export const certificationsList: CertificationItem[] = [
+  {
+    id: "cert-dci",
+    title: "React Web Development & UI Internship Certification",
+    issuer: "Dot Com Infoway Ltd.",
+    year: "2025",
+    credentialUrl: "/assets/certificates/dci-certificate.png",
+    imagePreview: "/assets/certificates/dci-certificate.png",
+    isVerifiedAsset: true,
+    description:
+      "Verified internship credential for React web development, modular component development, REST API integration, performance optimization, and UI defect remediation.",
+    topics: [
+      "React.js Component Architecture",
+      "RESTful Endpoint Integration",
+      "Asynchronous Data Rendering",
+      "Automated Unit Testing",
+      "Cross-Browser Compatibility",
+    ],
+  },
+  {
+    id: "cert-infosys",
+    title: "Applied Generative AI",
+    issuer: "Infosys Springboard",
+    year: "2025",
+    description:
+      "Enterprise training program covering transformer architectures, prompt engineering pipelines, LLM application integrations, creative media generation, and AI ethics.",
+    topics: [
+      "Generative AI Architectures",
+      "Prompt Engineering Pipelines",
+      "Creative Media Synthesis",
+      "Enterprise AI Governance",
+    ],
+  },
+  {
+    id: "cert-codetantra",
+    title: "Python & Data Structures",
+    issuer: "CodeTantra",
+    year: "2024",
+    description:
+      "Comprehensive certification in algorithmic problem solving, linear/non-linear data structures, object-oriented programming, and computational logic.",
+    topics: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Architecture",
+      "Computational Complexity",
+      "Data Processing",
+    ],
+  },
+  {
+    id: "cert-naan-mudhalvan",
+    title: "RPA Foundation & Automation Course",
+    issuer: "Naan Mudhalvan",
+    year: "2024",
+    description:
+      "Industry-aligned automation certification emphasizing workflow orchestration, rule-based triggers, data extraction, and scheduled background tasks.",
+    topics: [
+      "Process Automation",
+      "Workflow Logic & Rules",
+      "Automated Task Scheduling",
+    ],
+  },
+  {
+    id: "cert-zoho",
+    title: "Zoho Young Creator Program",
+    issuer: "Zoho Corporation",
+    year: "2023",
+    description:
+      "Enterprise application development certification centered on rapid UI architecture, database workflows, form automation, and business logic implementation.",
+    topics: [
+      "Application Architecture",
+      "Workflow Automation",
+      "Relational Data Modeling",
+    ],
+  },
+];
