@@ -1,0 +1,197 @@
+/* Cinematic Transition Styles & Kinetic Typography Animations */
+
+.cinematic-overlay {
+  background-color: #000000;
+  will-change: opacity, clip-path, transform, filter;
+}
+
+/* Reticle Grid Lines */
+.reticle-grid {
+  background-size: 80px 80px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.reticle-center-cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.reticle-center-cross::before,
+.reticle-center-cross::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 229, 255, 0.3);
+}
+.reticle-center-cross::before {
+  top: 0; bottom: 0; left: 50%; width: 1px;
+}
+.reticle-center-cross::after {
+  left: 0; right: 0; top: 50%; height: 1px;
+}
+
+/* SVG Vector Electric Stroke Animation */
+@keyframes stroke-draw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.animate-stroke-draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke-draw 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Kinetic typography stagger & reveals */
+@keyframes letter-explode {
+  0% {
+    letter-spacing: -0.05em;
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    letter-spacing: 0.15em;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-letter-explode {
+  animation: letter-explode 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shutter Curtain Clip Path */
+@keyframes shutter-reveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 1;
+    filter: blur(20px);
+  }
+  60% {
+    clip-path: circle(80% at 50% 50%);
+    opacity: 1;
+    filter: blur(4px);
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+    opacity: 0;
+    filter: blur(0px);
+  }
+}
+
+.animate-shutter-reveal {
+  animation: shutter-reveal 1.0s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Exit curtain for 4s navigation */
+@keyframes curtain-exit {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+.animate-curtain-exit {
+  animation: curtain-exit 0.4s ease-out forwards;
+}
+
+/* Light Sweep flare */
+@keyframes light-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+.animate-light-sweep {
+  animation: light-sweep 1.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Chromatic Glitch Shift */
+@keyframes chromatic-jitter {
+  0%, 100% {
+    text-shadow: 0 0 0 transparent;
+  }
+  25% {
+    text-shadow: -2px 0 #A100FF, 2px 0 #00E5FF;
+  }
+  50% {
+    text-shadow: 2px -1px #FF4D00, -2px 1px #00E5FF;
+  }
+  75% {
+    text-shadow: -1px 2px #A100FF, 1px -2px #FF4D00;
+  }
+}
+
+.chromatic-text {
+  animation: chromatic-jitter 2s infinite ease-in-out;
+}
+
+/* Laser Scanline Sweep */
+@keyframes scanline-sweep {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.laser-scanner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00E5FF, #A100FF, transparent);
+  box-shadow: 0 0 15px #A100FF, 0 0 30px #00E5FF;
+  animation: scanline-sweep 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Glow Ring Orbit */
+@keyframes ring-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-ring-rotate {
+  animation: ring-rotate 12s linear infinite;
+}
