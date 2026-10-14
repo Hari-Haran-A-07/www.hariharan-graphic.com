@@ -66,6 +66,34 @@ This is the flagship creative portfolio website for **Hari Haran A**, positioned
 
 ---
 
+## 🌐 Complete Project Directory & Live Production Demos
+
+Every project in the portfolio is paired with production deployments and open-source GitHub repositories:
+
+| Project | Domain / Focus | ⚡ Live Production Demo | 📦 GitHub Repository | Primary Tech Stack |
+|---|---|---|---|---|
+| **AK Racing** | Motorsport Hypercar Portal | [racing-three-flax.vercel.app](https://racing-three-flax.vercel.app) • [akracingcom.vercel.app](https://akracingcom.vercel.app) | [Hari-Haran-A-07/AK-racing](https://github.com/Hari-Haran-A-07/AK-racing) | Next.js, TypeScript, Tailwind CSS, 3D WebGL |
+| **Hot Cool Shake** | Beverage & Virtual Cold Lab | [hotcoolshake-in.vercel.app](https://hotcoolshake-in.vercel.app) | [Hari-Haran-A-07/hotcoolshake](https://github.com/Hari-Haran-A-07/hotcoolshake) | React 19, TypeScript, Lucide, Tailwind CSS |
+| **Friends Fried Chicken (FFC)** | QSR Food-Tech & Flavor Lab | [ffc-indol.vercel.app](https://ffc-indol.vercel.app) | [Hari-Haran-A-07/FFC](https://github.com/Hari-Haran-A-07/FFC) | React, Tailwind CSS, Sound FX, Framer Motion |
+| **Sri Neya Crane Services** | Heavy Machinery & Rigging | [wwwsncin.vercel.app](https://wwwsncin.vercel.app) • [GitHub Pages Demo](https://hari-haran-a-07.github.io/SNC/) | [Hari-Haran-A-07/SNC](https://github.com/Hari-Haran-A-07/SNC) | HTML5 Canvas, JavaScript, CSS3, Web API |
+| **Clothyy Global Maison** | Polyglot Luxury E-Commerce | [clothyyy.com](https://clothyyy.com) | [Hari-Haran-A-07/clothyy](https://github.com/Hari-Haran-A-07/clothyy) | React 19, Tailwind CSS, i18n, Commerce API |
+| **Lux.raw** | Avant-Garde High Fashion | [Lux.raw GitHub Pages](https://hari-haran-a-07.github.io/Lux.raw/) | [Hari-Haran-A-07/Lux.raw](https://github.com/Hari-Haran-A-07/Lux.raw) | HTML5, CSS3 Editorial Grid, JavaScript |
+| **Sambaleaf Cloud Kitchen** | Malaysian Sambal & Cloud Dining | [www-sambaleaf-com.vercel.app](https://www-sambaleaf-com.vercel.app) | [Hari-Haran-A-07/sambaleaf](https://github.com/Hari-Haran-A-07/sambaleaf) | Next.js, Tailwind CSS, Vercel |
+| **Social Media Strategy Hub** | Analytics & Content Automation | [socialmedia-strategy-system.vercel.app](https://socialmedia-strategy-system.vercel.app) | [Hari-Haran-A-07/socialmedia-system](https://github.com/Hari-Haran-A-07/socialmedia-system) | React, TypeScript, Analytics Engine |
+| **Kieyverse Gateway** | Cyberpunk Tech Ecosystem | [kiey-verse-in.vercel.app](https://kiey-verse-in.vercel.app) • [GitHub Pages](https://hari-haran-a-07.github.io/kieyverse/) | [Hari-Haran-A-07/kieyverse](https://github.com/Hari-Haran-A-07/kieyverse) | React, Three.js, Tailwind CSS |
+| **Hari Haran Full Stack Portfolio** | Interactive Terminal Developer Portfolio | [hariharan-a-full-stack-webdeveloper.vercel.app](https://hariharan-a-full-stack-webdeveloper.vercel.app) | [Hari-Haran-A-07/hariharan-a-portfolio](https://github.com/Hari-Haran-A-07/hariharan-a-portfolio) | React, TypeScript, Tailwind CSS, Terminal CLI |
+| **IPL Mega Auction 2026** | Sports Tech & Live Bidding Engine | [IPLAUCTION2026 Live](https://hari-haran-a-07.github.io/IPLAUCTION2026/) | [Hari-Haran-A-07/IPLAUCTION2026](https://github.com/Hari-Haran-A-07/IPLAUCTION2026) | HTML5, CSS3, JavaScript, LocalStorage |
+| **Novitas 2K26 Symposium** | Cyberpunk Tech Symposium Portal | [Novitas 2K26 Live](https://hari-haran-a-07.github.io/NOVITAS-2K26-HONG-KONG-/) • [Alternative Demo](https://hari-haran-a-07.github.io/novitos/) | [Hari-Haran-A-07/NOVITAS-2K26-HONG-KONG-](https://github.com/Hari-Haran-A-07/NOVITAS-2K26-HONG-KONG-) | HTML5 Canvas, Cyberpunk CSS, Audio Engine |
+| **IPL Auction Credit** | Purse Simulation & Strategy | [IPL Auction Credit Live](https://hari-haran-a-07.github.io/IPL-AUCTION-CREDIT/) | [Hari-Haran-A-07/IPL-AUCTION-CREDIT](https://github.com/Hari-Haran-A-07/IPL-AUCTION-CREDIT) | Vanilla JS, CSS3, Responsive Design |
+| **Round 3 Mega Auction** | Final Bidding Round Simulator | [Round 3 Auction Live](https://hari-haran-a-07.github.io/round-3-mega-auction/) | [Hari-Haran-A-07/round-3-mega-auction](https://github.com/Hari-Haran-A-07/round-3-mega-auction) | JavaScript, CSS Grid, Audio Cues |
+| **The Last Guardian** | Unreal Engine 5 Cinematic Game | [Case Study Repository](https://github.com/Hari-Haran-A-07/THE-LAST-GUARDIAN) | [Hari-Haran-A-07/THE-LAST-GUARDIAN](https://github.com/Hari-Haran-A-07/THE-LAST-GUARDIAN) | Unreal Engine 5, Blueprints, Lumen, Nanite |
+| **HTML Playerpage** | E-Sports Gaming Profile Showcase | [HTML Playerpage Live](https://hari-haran-a-07.github.io/HTML-Playerpage/) | [Hari-Haran-A-07/HTML-Playerpage](https://github.com/Hari-Haran-A-07/HTML-Playerpage) | HTML5, CSS3, Glassmorphism |
+| **JS E-Commerce Store** | Minimalist Web Storefront | [Repository](https://github.com/Hari-Haran-A-07/E-Commerce-Website-Using-Javascript) | [Hari-Haran-A-07/E-Commerce-Website](https://github.com/Hari-Haran-A-07/E-Commerce-Website-Using-Javascript) | JavaScript, HTML5, CSS3 |
+| **Tech LMS Platform** | Digital Academy & Learning Portal | [Repository](https://github.com/Hari-Haran-A-07/LMS-WEBSITE-USING-HTML-CSS-JAVASCRIPT) | [Hari-Haran-A-07/LMS-WEBSITE](https://github.com/Hari-Haran-A-07/LMS-WEBSITE-USING-HTML-CSS-JAVASCRIPT) | HTML5, CSS3, Vanilla JS |
+| **Hariharan Graphic Portfolio** | Flagship Agency Web Portfolio | [www-hariharan-graphic-com.vercel.app](https://www-hariharan-graphic-com.vercel.app) | [Hari-Haran-A-07/www.hariharan-graphic.com](https://github.com/Hari-Haran-A-07/www.hariharan-graphic.com) | React 19, TypeScript, Tailwind CSS v4, OGL WebGL |
+
+---
+
 ### 🔐 4. Central Creative Vault (Canva & Google Drive Unified Archive)
 * Direct repository connection to 12+ public and client deliverables.
 * Multi-format search & filter engine (`CANVA`, `DRIVE`, `FIGMA`, `VIDEO`, `IMAGE`).
