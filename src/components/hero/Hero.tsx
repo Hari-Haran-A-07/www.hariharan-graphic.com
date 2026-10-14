@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowDown, ArrowUpRight, Download, Sparkles, FolderLock, Play, Compass, Zap } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Download, Sparkles, FolderLock, Play, Compass, Zap, Radio, GitBranch } from 'lucide-react';
 import { CursorState } from '@/types';
 import { CrystalizedBall, BallPreset } from '@/components/ui/CrystalizedBall';
 import { useTransitionRouter } from '@/context/TransitionContext';
@@ -149,12 +149,33 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Main Editorial Hero Content */}
       <div className="max-w-7xl mx-auto w-full relative z-10 my-auto">
         
-        {/* Top Discipline Tag */}
-        <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md mb-8">
-          <Sparkles className="w-3.5 h-3.5 text-[#A100FF]" />
-          <span className="font-mono text-xs text-[#F5F5F5] tracking-widest uppercase">
-            GRAPHIC DESIGNER / VIDEO EDITOR / CREATIVE TECHNOLOGIST
-          </span>
+        {/* Top Discipline Tag & Live Status */}
+        <div className="flex flex-wrap items-center gap-2.5 mb-8">
+          <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md">
+            <Sparkles className="w-3.5 h-3.5 text-[#A100FF]" />
+            <span className="font-mono text-xs text-[#F5F5F5] tracking-widest uppercase">
+              GRAPHIC DESIGNER / VIDEO EDITOR / CREATIVE TECHNOLOGIST
+            </span>
+          </div>
+
+          <a
+            href="#work"
+            className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-400 font-mono text-xs hover:bg-emerald-900/60 transition-colors shadow-sm"
+          >
+            <Radio className="w-3 h-3 text-emerald-400 animate-pulse" />
+            <span className="font-bold">15+ LIVE DEMOS</span>
+          </a>
+
+          <a
+            href="https://github.com/Hari-Haran-A-07"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-[#00E5FF] font-mono text-xs hover:border-cyan-400 transition-colors"
+          >
+            <GitBranch className="w-3 h-3 text-[#00E5FF]" />
+            <span>33+ GITHUB REPOSITORIES</span>
+            <ArrowUpRight className="w-2.5 h-2.5" />
+          </a>
         </div>
 
         {/* Oversized Cinematic Typography Headline */}
@@ -253,13 +274,27 @@ export const Hero: React.FC<HeroProps> = ({
 
       {/* Bottom Technical Bar & Scroll Indicator */}
       <div className="relative z-10 pt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-white/10 text-xs font-mono text-[#6F6F6F] gap-4">
-        <div className="flex items-center space-x-4">
+        <div className="flex flex-wrap items-center gap-3">
           <span className="flex items-center space-x-2 text-[#A7A7A7]">
             <Compass className="w-3.5 h-3.5 text-[#A100FF]" />
             <span>DINDIGUL, TN, INDIA</span>
           </span>
           <span>•</span>
-          <span className="text-[#00E5FF]">2026 ACTIVE PORTFOLIO</span>
+          <span className="text-emerald-400 flex items-center space-x-1.5 font-bold">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span>15+ LIVE DEMOS</span>
+          </span>
+          <span>•</span>
+          <a
+            href="https://github.com/Hari-Haran-A-07"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#00E5FF] hover:underline flex items-center space-x-1"
+          >
+            <span>33 GITHUB REPOSITORIES</span>
+          </a>
+          <span>•</span>
+          <span className="text-[#A7A7A7]">2026 ACTIVE PORTFOLIO</span>
         </div>
 
         <button
