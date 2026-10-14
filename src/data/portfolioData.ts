@@ -171,7 +171,8 @@ export const selectedProjects: ProjectItem[] = [
     canvaUrl: "https://www.canva.com/projects",
     driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
     githubUrl: "https://github.com/Hari-Haran-A-07/kiey-verse.in",
-    liveDemoUrl: "https://kiey-verse.in",
+    liveDemoUrl: "https://kiey-verse-in.vercel.app",
+    hasLiveDemo: true,
     summary:
       "Full corporate brand identity overhaul for Kieyverse, encompassing logo geometry, brand guidelines, marketing brochures, service one-pagers, display banners, and a responsive web portal.",
     problem:
@@ -1444,6 +1445,57 @@ export const selectedProjects: ProjectItem[] = [
       "Sports Telemetry",
       "Career Analytics",
       "GitHub Pages Live",
+    ],
+  },
+  {
+    id: "js-ecommerce-minimalist",
+    number: "022",
+    title: "MINIMALIST JAVASCRIPT E-COMMERCE ENGINE",
+    subtitle: "Pure Vanilla JavaScript Shopping Cart, Instant Product Filtering & Dynamic Local Checkout",
+    category: "WEB",
+    year: "2025",
+    client: "E-Commerce Architecture Lab",
+    tools: ["Vanilla JavaScript", "HTML5", "CSS3 Flexbox", "LocalStorage API", "Responsive Design"],
+    thumbnail: "js-ecommerce",
+    badge: "Vanilla JS",
+    featured: false,
+    layoutStyle: "portrait",
+    accentColor: "#EAB308",
+    githubUrl: "https://github.com/Hari-Haran-A-07/js-ecommerce",
+    liveDemoUrl: "https://github.com/Hari-Haran-A-07/js-ecommerce",
+    hasLiveDemo: false,
+    summary:
+      "A lightweight, dependency-free vanilla JavaScript e-commerce shopping cart engine engineered with localStorage state persistence, instant category filtering, real-time cart subtotal computations, and responsive product modals.",
+    problem:
+      "Many modern web projects carry heavy JavaScript framework bloat for simple storefront operations that can be achieved with faster, cleaner native browser APIs.",
+    concept:
+      "Built a pure vanilla ES6+ shopping architecture utilizing native DOM event delegation, reactive state synchronization via custom events, and localStorage persistence.",
+    visualDirection:
+      "Clean commercial minimalist styling: dark charcoal cards, amber price tags, and high-contrast typography.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Product Titles & Store Branding", sample: "MINIMALIST STORE // JS ENGINE", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Product Details & Cart Summaries", sample: "Item Subtotal: ₹4,299 • Tax Included • Free Delivery", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Retail Amber", hex: "#EAB308", role: "Add-to-Cart Button" },
+      { name: "Clean Obsidian", hex: "#111114", role: "Card Surface" },
+      { name: "Pure White", hex: "#FFFFFF", role: "Product Headings" },
+    ],
+    keyFeatures: [
+      "Zero third-party library dependencies (pure native ES6+ JavaScript)",
+      "Instant client-side category filtering and price sorting",
+      "Cart state synchronization backed by browser localStorage",
+      "Modal product inspection drawer with quantity modifiers",
+      "Open source repository on GitHub",
+    ],
+    results: [
+      "Sub-100KB total bundle footprint across HTML, CSS, and JS",
+      "Instant 60fps interaction on low-end mobile devices",
+    ],
+    metrics: [
+      "Zero Dependencies",
+      "Sub-100KB Footprint",
+      "LocalStorage Cart",
     ],
   },
 ];
