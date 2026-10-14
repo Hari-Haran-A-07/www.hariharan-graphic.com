@@ -312,6 +312,60 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-[#00E5FF]">ZERO ARTIFACTING</span>
           </div>
         </div>
+    case 'ak-racing-motorsport':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1C0505] via-[#0D0202] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-red-600/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Racing Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
+              <span className="font-display font-black text-sm tracking-widest text-red-500 flex items-center space-x-1">
+                <Flame className="w-4 h-4 fill-current text-red-500 animate-pulse" />
+                <span>AK RACING // LE MANS 499P</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-red-400 px-2.5 py-1 rounded-full bg-red-950/80 border border-red-500/40">
+              #50 / #62 HYPERCAR
+            </span>
+          </div>
+
+          {/* Center Speedometer & Telemetry Stage */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-red-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">VELOCITY</span>
+              <div className="font-display font-black text-2xl text-white tracking-tighter">
+                342 <span className="text-xs text-red-400 font-normal">KM/H</span>
+              </div>
+              <span className="font-mono text-[8px] text-red-400">MAX STRAIGHT</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-red-500/30 flex flex-col justify-between text-center shadow-lg shadow-red-950/40">
+              <span className="font-mono text-[9px] text-red-400">GEAR / TACHO</span>
+              <div className="font-display font-black text-3xl text-red-500">6</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-yellow-400 to-red-500 h-full w-[88%]" />
+              </div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">8,500 RPM</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-red-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">TELEMETRY</span>
+              <div className="font-mono font-bold text-xs text-emerald-400">V6 HYBRID</div>
+              <span className="font-mono text-[8px] text-cyan-400">3D LIVERY SYNC</span>
+            </div>
+          </div>
+
+          {/* Bottom Audio Dyno & Stack Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-red-950/60 pt-3">
+            <span className="text-red-400 flex items-center space-x-1">
+              <Gauge className="w-3.5 h-3.5" />
+              <span>REAL-TIME FIRE TELEMETRY</span>
+            </span>
+            <span className="text-emerald-400">WEBGL + AUDIO SYNTH</span>
+          </div>
+        </div>
       );
 
     default:
