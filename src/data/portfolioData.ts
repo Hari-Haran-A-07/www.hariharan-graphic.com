@@ -1346,6 +1346,106 @@ export const selectedProjects: ProjectItem[] = [
       "GitHub Pages Live",
     ],
   },
+  {
+    id: "lastguardian-ue5",
+    number: "020",
+    title: "THE LAST GUARDIAN ACTION ADVENTURE",
+    subtitle: "Online Open-World Action/Adventure Built in Unreal Engine 5 with Modular C++ Architecture",
+    category: "EXPERIMENTAL",
+    year: "2025",
+    client: "Interactive Game Systems Research",
+    tools: ["Unreal Engine 5", "C++", "Lumen & Nanite", "Chaos Physics", "HLSL Shaders"],
+    thumbnail: "lastguardian",
+    badge: "UE5 Game Dev",
+    featured: false,
+    layoutStyle: "split-screen",
+    accentColor: "#8B5CF6",
+    githubUrl: "https://github.com/Hari-Haran-A-07/lastguardian",
+    liveDemoUrl: "https://github.com/Hari-Haran-A-07/lastguardian",
+    hasLiveDemo: false,
+    summary:
+      "An online open-world action/adventure game built in Unreal Engine 5 leveraging modular C++ gameplay frameworks, Lumen dynamic global illumination, Nanite micro-polygon geometry, and responsive player movement state machines.",
+    problem:
+      "Open-world game development requires high-performance memory management and multithreaded actor tick loops that avoid frame drops during complex combat encounters.",
+    concept:
+      "Engineered a modular actor-component architecture separating character locomotion, inventory management, weapon collision tracing, and AI behavior trees.",
+    visualDirection:
+      "Atmospheric dark fantasy: ethereal purple twilight, rugged stone textures, glowing runic beacons, and cinematic letterbox perspectives.",
+    typography: [
+      { fontFamily: "Syne", usage: "Game Title & Lore Wordmarks", sample: "THE LAST GUARDIAN // CHRONICLES", weight: "Bold 700" },
+      { fontFamily: "JetBrains Mono", usage: "C++ Engine Profiler & FPS Logs", sample: "TICK_TIME: 8.3MS • 120 FPS • DRAW_CALLS: 1,420", weight: "Medium 500" },
+    ],
+    colorSystem: [
+      { name: "Twilight Violet", hex: "#8B5CF6", role: "Runic Beacon Aura" },
+      { name: "Ancient Stone", hex: "#18181B", role: "Terrain Base" },
+      { name: "Lumen Gold", hex: "#F59E0B", role: "Volumetric Sunlight" },
+    ],
+    keyFeatures: [
+      "Modular C++ player locomotion and combat state machine",
+      "Unreal Engine 5 Lumen dynamic global illumination and Nanite streaming",
+      "Chaos physics weapon trace and hit-impact feedback",
+      "Open-source repository with clean code architecture on GitHub",
+    ],
+    results: [
+      "Stable 60+ FPS rendering across complex terrain environments",
+      "Under 8.3ms CPU game thread tick time",
+    ],
+    metrics: [
+      "Unreal Engine 5",
+      "Modular C++ Framework",
+      "Lumen + Nanite",
+    ],
+  },
+  {
+    id: "html-playerpage-telemetry",
+    number: "021",
+    title: "CRICKET ATHLETE TELEMETRY & STATS SHOWCASE",
+    subtitle: "Sports Telemetry Card, Batting/Bowling Strike Rates & Career Analytics Dashboard",
+    category: "WEB",
+    year: "2026",
+    client: "Sports Analytics & Visual Media",
+    tools: ["HTML5", "CSS3 Flexbox", "JavaScript", "Sports Visual Tokens", "Responsive UI"],
+    thumbnail: "html-playerpage",
+    badge: "Sports Analytics",
+    featured: false,
+    layoutStyle: "portrait",
+    accentColor: "#00E5FF",
+    githubUrl: "https://github.com/Hari-Haran-A-07/HTML-Playerpage",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/HTML-Playerpage/",
+    hasLiveDemo: true,
+    summary:
+      "An interactive sports telemetry card and career analytics showcase presenting high-impact cricket athlete metrics: strike rate progression dials, wagon-wheel zone breakdown, match milestone badges, and career milestones.",
+    problem:
+      "Sports stats presentations are frequently plain tabular lists that fail to communicate an athlete's dynamic match impact or clutch performance moments.",
+    concept:
+      "Built a high-visibility athletic profile card combining radial progress meters, career milestone badges, and high-contrast match statistics.",
+    visualDirection:
+      "High-energy sports broadcast styling: deep navy stadium backdrops, electric cyan accents, and clear score typography.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Player Name & Match Scores", sample: "VIRAT KOHLI // 183* INNINGS", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Career Averages & Strike Rates", sample: "Strike Rate: 138.4 • Average: 52.8 • 100s: 50", weight: "Medium 500" },
+    ],
+    colorSystem: [
+      { name: "Cyan Stadium", hex: "#00E5FF", role: "Primary Energy Accent" },
+      { name: "Navy Depth", hex: "#070D19", role: "Player Card Floor" },
+      { name: "Gold Century", hex: "#F59E0B", role: "Milestone Century Badges" },
+    ],
+    keyFeatures: [
+      "Interactive athletic player card with strike rate and boundary percentages",
+      "Career summary badges (centuries, fifties, economy rates)",
+      "Zero-latency vanilla HTML5/CSS3 implementation",
+      "Live deployment at hari-haran-a-07.github.io/HTML-Playerpage",
+    ],
+    results: [
+      "100% responsive rendering across mobile and desktop devices",
+      "Under 0.8s initial load time",
+    ],
+    metrics: [
+      "Sports Telemetry",
+      "Career Analytics",
+      "GitHub Pages Live",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
