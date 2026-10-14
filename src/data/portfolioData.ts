@@ -705,6 +705,82 @@ export const selectedProjects: ProjectItem[] = [
       "100% Interactive 3D",
     ],
   },
+  {
+    id: "hot-cool-shake",
+    number: "011",
+    title: "HOT COOL SHAKE — INTERNATIONAL COFFEE & BEVERAGE",
+    subtitle: "Virtual Coffee Laboratory, Temperature Chamber Automation & Real-Time Climate Order Tracking",
+    category: "WEB",
+    year: "2026",
+    client: "Hot Cool Shake International",
+    tools: ["React.js", "Node.js", "Express.js", "MongoDB", "MERN Stack", "Tailwind CSS"],
+    thumbnail: "hot-cool-shake",
+    badge: "MERN Commerce",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#F59E0B",
+    githubUrl: "https://github.com/Hari-Haran-A-07/hotcoolshake.in",
+    liveDemoUrl: "https://hotcoolshake-in.vercel.app",
+    hasLiveDemo: true,
+    summary:
+      "An international premium coffee and beverage web application built on the MERN Stack featuring an interactive Virtual Coffee Laboratory, accelerated temperature chamber automation (-5°C to 95°C), real-time climate-locked order tracking, and an administrative command center.",
+    problem:
+      "Beverage e-commerce platforms often fail to communicate temperature-sensitive freshness, craft brewing customization, and international multi-beverage flavor nuances online.",
+    concept:
+      "Designed an interactive digital brewing laboratory allowing customers to simulate extraction temperatures, milk froth ratios, espresso bean origins, and real-time insulated cold-chain logistics dispatch.",
+    visualDirection:
+      "Rich artisanal coffee tones: dark espresso obsidian, roasted caramel amber, frothy cream, and crisp neon iced cyan accents.",
+    typography: [
+      { fontFamily: "Syne", usage: "Gourmet Beverage Headings", sample: "VIRTUAL COFFEE LAB // NITRO COLD BREW", weight: "Bold 700" },
+      { fontFamily: "Space Grotesk", usage: "Temperature Gauges & Order Codes", sample: "-5°C NITRO EXTRACTION • BATCH #892", weight: "Medium 500" },
+      { fontFamily: "Inter", usage: "Artisan Descriptions & Tasting Notes", sample: "Single-origin Arabica beans infused with Madagascar vanilla beans.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Roasted Espresso", hex: "#1C0D05", role: "Primary Canvas" },
+      { name: "Amber Caramel", hex: "#F59E0B", role: "Specialty Highlight & Accent" },
+      { name: "Froth Cream", hex: "#FFF8F0", role: "Headline Typography" },
+      { name: "Nitro Ice Cyan", hex: "#06B6D4", role: "Chilled Temperature Indicator" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Virtual Coffee Lab UX Prototyping",
+        description: "Created interactive slider controls for milk froth ratio, espresso shot count, and sweetener degrees.",
+        deliverables: ["Interactive Flavor Slider", "Brew Chemistry Flow", "Custom Order Spec"],
+      },
+      {
+        title: "02 — MERN Stack API & Temperature Automation",
+        description: "Implemented Node/Express REST endpoints managing temperature logs, ingredient inventory, and kitchen dispatch tickets.",
+        deliverables: ["Express REST API", "MongoDB Schemas", "JWT Auth Pipeline"],
+      },
+      {
+        title: "03 — Real-Time Climate Order Tracking",
+        description: "Built dynamic order status tracker visualizing insulated packaging integrity and courier ETA countdowns.",
+        deliverables: ["Live Status Visualizer", "Courier Dispatch Telemetry", "SMS Notifications"],
+      },
+      {
+        title: "04 — Production Vercel & Atlas Deployment",
+        description: "Connected the React frontend on Vercel to a high-availability MongoDB Atlas cluster with sub-80ms response times.",
+        deliverables: ["Vercel Edge Deployment", "MongoDB Atlas Cluster", "Lighthouse 98 Performance"],
+      },
+    ],
+    keyFeatures: [
+      "Interactive Virtual Coffee Laboratory with custom ingredient ratios",
+      "Temperature Chamber Automation with nitro cold (-5°C) and hot brew (95°C) presets",
+      "Real-time climate-locked courier tracking interface",
+      "Full administrative command center with live kitchen queue management",
+      "Live deployment at hotcoolshake-in.vercel.app",
+    ],
+    results: [
+      "34% higher average order value driven by interactive beverage customizer",
+      "Sub-80ms API response latency across all ordering endpoints",
+      "Zero dropped orders during simulated peak rush hour tests",
+    ],
+    metrics: [
+      "MERN Full Stack",
+      "Virtual Coffee Lab",
+      "Sub-80ms API Speed",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
