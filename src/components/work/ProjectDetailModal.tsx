@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   X, ArrowRight, ArrowLeft, ArrowUpRight, Copy, Check,
-  Layers, Palette, Type, CheckCircle2
+  Layers, Palette, Type, CheckCircle2, GitBranch, Radio, ExternalLink, Monitor, RefreshCw
 } from 'lucide-react';
 import { ProjectItem, CursorState } from '@/types';
 import { ProjectArtworkRenderer } from './ProjectArtworkRenderer';
@@ -23,6 +23,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
   setCursorState: _setCursorState,
 }) => {
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
+  const [showLiveFrame, setShowLiveFrame] = useState<boolean>(false);
   const { navigateWithTransition } = useTransitionRouter();
 
   const currentIndex = project ? allProjects.findIndex(p => p.id === project.id) : 0;
@@ -86,6 +87,19 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
         </div>
 
         <div className="flex items-center space-x-3">
+          {project.liveDemoUrl && (
+            <a
+              href={project.liveDemoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-black font-display font-black text-xs transition-all flex items-center space-x-1.5 shadow-md shadow-emerald-500/20 hover:scale-105"
+            >
+              <Radio className="w-3.5 h-3.5 animate-pulse" />
+              <span>LIVE DEMO</span>
+              <ArrowUpRight className="w-3 h-3 stroke-[3]" />
+            </a>
+          )}
+
           <div className="hidden md:flex items-center space-x-2 font-mono text-xs text-[#A7A7A7]">
             <button
               onClick={handlePrev}
@@ -131,6 +145,12 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                 CLIENT: {project.client}
               </span>
             )}
+            {project.liveDemoUrl && (
+              <span className="font-mono text-xs text-emerald-400 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 flex items-center space-x-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>ONLINE PRODUCTION DEPLOYMENT</span>
+              </span>
+            )}
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white leading-none">
@@ -141,10 +161,90 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
             {project.subtitle}
           </p>
 
-          {/* Large Visual Cover Stage */}
-          <div className="w-full rounded-3xl overflow-hidden border border-white/15 bg-[#0D0D0D] shadow-2xl min-h-[380px]">
-            <ProjectArtworkRenderer project={project} />
+          {/* Action Header Pills */}
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            {project.liveDemoUrl && (
+              <a
+                href={project.liveDemoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-black font-display font-black text-xs shadow-lg shadow-emerald-500/20 hover:scale-105 transition-all flex items-center space-x-2"
+              >
+                <Radio className="w-4 h-4 animate-pulse" />
+                <span>LAUNCH LIVE DEMO</span>
+                <ArrowUpRight className="w-3.5 h-3.5 stroke-[3]" />
+              </a>
+            )}
+
+            {project.liveDemoUrl && (
+              <button
+                onClick={() => setShowLiveFrame(!showLiveFrame)}
+                className={`px-5 py-3 rounded-full font-mono text-xs border transition-all flex items-center space-x-2 ${
+                  showLiveFrame
+                    ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-inner'
+                    : 'bg-white/5 hover:bg-white/10 text-white/90 border-white/20'
+                }`}
+              >
+                <Monitor className="w-3.5 h-3.5 text-emerald-400" />
+                <span>{showLiveFrame ? 'SWITCH TO CASE STUDY ARTWORK' : 'PREVIEW INTERACTIVE APP (IN-APP)'}</span>
+              </button>
+            )}
+
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-mono text-xs border border-white/20 hover:scale-105 transition-all flex items-center space-x-2"
+              >
+                <GitBranch className="w-3.5 h-3.5 text-[#A100FF]" />
+                <span>GITHUB REPOSITORY</span>
+                <ArrowUpRight className="w-3 h-3" />
+              </a>
+            )}
           </div>
+
+          {/* Large Visual Cover Stage or Live Iframe Preview */}
+          {showLiveFrame && project.liveDemoUrl ? (
+            <div className="w-full rounded-3xl overflow-hidden border border-emerald-500/30 bg-[#0A0A0A] shadow-2xl flex flex-col">
+              <div className="px-4 py-3 bg-[#141414] border-b border-white/10 flex items-center justify-between gap-4">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+                </div>
+                <div className="flex-1 max-w-xl mx-auto px-4 py-1.5 rounded-full bg-black/80 border border-white/10 text-center font-mono text-xs text-[#A7A7A7] truncate flex items-center justify-center space-x-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                  <span className="text-white select-all">{project.liveDemoUrl}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center space-x-1 font-mono text-xs"
+                    title="Open in new window"
+                  >
+                    <span>EXTERNAL</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </div>
+              <div className="w-full h-[650px] bg-black relative">
+                <iframe
+                  src={project.liveDemoUrl}
+                  title={`${project.title} Live Preview`}
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="w-full rounded-3xl overflow-hidden border border-white/15 bg-[#0D0D0D] shadow-2xl min-h-[380px]">
+              <ProjectArtworkRenderer project={project} />
+            </div>
+          )}
         </section>
 
         {/* 02 — PROJECT OVERVIEW & 03 — CREATIVE PROBLEM */}
@@ -358,26 +458,28 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
               </a>
             )}
 
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-mono text-xs border border-white/20"
-              >
-                <span>GITHUB REPO</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
-            )}
-
             {project.liveDemoUrl && (
               <a
                 href={project.liveDemoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-6 py-3.5 rounded-full bg-[#00E5FF] text-black font-display font-bold text-xs hover:scale-105 transition-transform"
+                className="flex items-center space-x-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-black font-display font-black text-xs hover:scale-105 transition-all shadow-xl shadow-emerald-500/25"
               >
-                <span>LIVE WEBSITE</span>
+                <Radio className="w-4 h-4 animate-pulse" />
+                <span>LAUNCH LIVE DEMO APPLICATION</span>
+                <ArrowUpRight className="w-4 h-4 stroke-[3]" />
+              </a>
+            )}
+
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-mono text-xs border border-white/20 hover:scale-105 transition-all"
+              >
+                <GitBranch className="w-4 h-4 text-[#A100FF]" />
+                <span>GITHUB REPOSITORY</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             )}
