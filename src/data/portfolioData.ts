@@ -1169,6 +1169,82 @@ export const selectedProjects: ProjectItem[] = [
       "GitHub Pages Live",
     ],
   },
+  {
+    id: "novitas-2k26-hong-kong",
+    number: "017",
+    title: "NOVITAS 2K26 INTERNATIONAL SYMPOSIUM PLATFORM",
+    subtitle: "Global Technical Fest Portal, Event Registration, Tracks & Interactive Schedule Visualizer",
+    category: "WEB",
+    year: "2026",
+    client: "Novitas 2K26 International Technical Committee",
+    tools: ["HTML5", "CSS3 Grid", "JavaScript ES6+", "Canvas FX", "Responsive UI"],
+    thumbnail: "novitas-2k26-hong-kong",
+    badge: "Global Symposium",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#C026D3",
+    githubUrl: "https://github.com/Hari-Haran-A-07/NOVITAS-2K26-HONG-KONG-",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/NOVITAS-2K26-HONG-KONG-/",
+    hasLiveDemo: true,
+    summary:
+      "The official international technical fest portal for Novitas 2K26 Hong Kong Edition, featuring multi-track technical event registrations (AI Paper Presentation, Web3 Hackathon, Robotics Challenge), live keynote schedules, dynamic Hong Kong skyline particle canvas, and automated QR pass generation.",
+    problem:
+      "International college symposiums suffer from fragmented event brochures, disjointed Google Form registrations, and static schedules that cause delegate confusion.",
+    concept:
+      "Constructed a high-energy cyberpunk web hub that centralizes paper submissions, hackathon rules, countdown timers, judging criteria, and mobile-friendly ticket passes in one cohesive ecosystem.",
+    visualDirection:
+      "Hong Kong cyberpunk neon aesthetic: electric magenta, laser cyan, dark obsidian streets, holographic glass cards, and kinetic digital typography.",
+    typography: [
+      { fontFamily: "Syne", usage: "Symposium Wordmarks & Track Names", sample: "NOVITAS 2K26 // GLOBAL SYMPOSIUM", weight: "ExtraBold 800" },
+      { fontFamily: "Space Grotesk", usage: "Event Timelines & Prize Pools", sample: "CASH POOL: ₹1,50,00,000 • 8 CORE TRACKS", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Rulebooks & Submission Guidelines", sample: "IEEE format papers reviewed by international academic panels.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Neon Magenta", hex: "#C026D3", role: "Primary Brand Focal Glow" },
+      { name: "Cyber Cyan", hex: "#06B6D4", role: "Event Badges & Deadlines" },
+      { name: "Obsidian Void", hex: "#0A030E", role: "Night Stage Surface" },
+      { name: "Pure White", hex: "#FFFFFF", role: "High-Contrast Copy" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Hong Kong Cyber Aesthetic Ideation",
+        description: "Created visual identity merging Hong Kong architectural neon with futuristic technological conference themes.",
+        deliverables: ["Visual Moodboards", "Neon Color Token Suite", "Skyline Vector Assets"],
+      },
+      {
+        title: "02 — Multi-Track Event Architecture",
+        description: "Engineered 8 specialized event portals detailing problem statements, round structures, and judging matrices.",
+        deliverables: ["Track Pages", "Rules Accordion UI", "Prize Pool Breakdowns"],
+      },
+      {
+        title: "03 — Registration Pipeline & QR Pass Generation",
+        description: "Built client-side registration validator producing instant downloadable ticket passes with attendee QR codes.",
+        deliverables: ["QR Code Generator", "Attendee Pass Canvas", "Validation Script"],
+      },
+      {
+        title: "04 — Live GitHub Pages Global Deployment",
+        description: "Deployed to GitHub Pages with instant edge CDN caching and zero-latency mobile accessibility.",
+        deliverables: ["GitHub Pages Live Site", "Canvas Particle Loop", "Cross-Device QA"],
+      },
+    ],
+    keyFeatures: [
+      "8 Interactive Technical Tracks with instant registration and rules",
+      "Dynamic Hong Kong neon skyline canvas background with particle physics",
+      "Live symposium countdown clock and interactive keynote schedule",
+      "Automated digital QR event pass generator for frictionless venue check-in",
+      "Live deployment at hari-haran-a-07.github.io/NOVITAS-2K26-HONG-KONG-",
+    ],
+    results: [
+      "500+ student delegates registered across 18 universities",
+      "Zero registration pipeline downtime during peak submission deadlines",
+      "99% positive design feedback from faculty and attendees",
+    ],
+    metrics: [
+      "8 Technical Tracks",
+      "500+ Registrations",
+      "GitHub Pages Live",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
