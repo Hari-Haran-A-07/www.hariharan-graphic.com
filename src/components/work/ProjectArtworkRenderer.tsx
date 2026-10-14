@@ -366,6 +366,55 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">WEBGL + AUDIO SYNTH</span>
           </div>
         </div>
+    case 'hot-cool-shake':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#261305] via-[#120802] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-amber-600/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Beverage Lab Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse" />
+              <span className="font-display font-black text-sm tracking-wider text-amber-400 flex items-center space-x-1.5">
+                <Coffee className="w-4 h-4 text-amber-400" />
+                <span>HOT COOL SHAKE // BEVERAGE LAB</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-amber-300 px-2.5 py-1 rounded-full bg-amber-950/80 border border-amber-500/40">
+              VIRTUAL EXTRACTION
+            </span>
+          </div>
+
+          {/* Center Chamber & Temperature Gauges */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-amber-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">COLD BREW</span>
+              <div className="font-display font-black text-xl text-cyan-400">-5°C</div>
+              <span className="font-mono text-[8px] text-cyan-300">NITRO CHILL</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-amber-500/30 flex flex-col justify-between text-center shadow-lg shadow-amber-950/50">
+              <span className="font-mono text-[9px] text-amber-400">HOT ESPRESSO</span>
+              <div className="font-display font-black text-xl text-amber-500">92°C</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-amber-400 to-red-500 h-full w-[92%]" />
+              </div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">GOLD EXTRACTION</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-amber-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">DISPATCH</span>
+              <div className="font-mono font-bold text-xs text-emerald-400">CLIMATE SYNC</div>
+              <span className="font-mono text-[8px] text-amber-300">MERN ENGINE</span>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-amber-950/60 pt-3">
+            <span className="text-amber-400">MERN STACK + REAL-TIME LAB</span>
+            <span className="text-emerald-400">LIVE AT HOTCOOLSHAKE-IN.VERCEL.APP</span>
+          </div>
+        </div>
       );
 
     default:
