@@ -415,6 +415,55 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">LIVE AT HOTCOOLSHAKE-IN.VERCEL.APP</span>
           </div>
         </div>
+    case 'friends-fried-chicken':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#2E1202] via-[#140601] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-orange-600/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Food Tech Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping" />
+              <span className="font-display font-black text-sm tracking-wider text-orange-400 flex items-center space-x-1.5">
+                <Utensils className="w-4 h-4 text-orange-500" />
+                <span>FFC // FRIENDS FRIED CHICKEN</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-amber-300 px-2.5 py-1 rounded-full bg-orange-950/80 border border-orange-500/40">
+              FOOD-TECH CUSTOMIZER
+            </span>
+          </div>
+
+          {/* Center Crunch Acoustics & Oil Bath Telemetry */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-orange-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">CRISPY INDEX</span>
+              <div className="font-display font-black text-2xl text-amber-400">98.4%</div>
+              <span className="font-mono text-[8px] text-emerald-400">CRUNCH ACOUSTICS</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-orange-500/30 flex flex-col justify-between text-center shadow-lg shadow-orange-950/50">
+              <span className="font-mono text-[9px] text-orange-400">FRYER QUEUE</span>
+              <div className="font-display font-black text-xl text-orange-500">375°F</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 h-full w-[94%]" />
+              </div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">ACTIVE KITCHEN</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-orange-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">CUSTOMIZER</span>
+              <div className="font-mono font-bold text-xs text-amber-300">SPICE MATRIX</div>
+              <span className="font-mono text-[8px] text-orange-400">3D BUILDER</span>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-orange-950/60 pt-3">
+            <span className="text-orange-400">YOU CREATE IT. WE FRY IT.</span>
+            <span className="text-emerald-400">LIVE AT FFC-INDOL.VERCEL.APP</span>
+          </div>
+        </div>
       );
 
     default:
