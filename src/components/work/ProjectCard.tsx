@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Globe, Layers, Eye, FolderLock, ExternalLink, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Globe, Layers, Eye, FolderLock, ExternalLink, Sparkles, GitBranch, Radio } from 'lucide-react';
 import { ProjectItem, CursorState } from '@/types';
 import { ProjectArtworkRenderer } from './ProjectArtworkRenderer';
 
@@ -60,11 +60,19 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </span>
           </div>
 
-          {project.badge && (
-            <span className="font-mono text-[10px] text-[#00E5FF] px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md border border-cyan-500/30">
-              {project.badge}
-            </span>
-          )}
+          <div className="flex items-center space-x-2">
+            {project.liveDemoUrl && (
+              <span className="font-mono text-[10px] text-emerald-400 px-2.5 py-1 rounded-full bg-emerald-950/90 backdrop-blur-md border border-emerald-500/40 flex items-center space-x-1.5 shadow-lg shadow-emerald-950/50">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>LIVE DEMO</span>
+              </span>
+            )}
+            {project.badge && (
+              <span className="font-mono text-[10px] text-[#00E5FF] px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md border border-cyan-500/30">
+                {project.badge}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 
@@ -103,7 +111,36 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
 
           {/* Action CTAs */}
-          <div className="flex items-center space-x-2 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            {project.liveDemoUrl && (
+              <a
+                href={project.liveDemoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                title="Launch Live Demo Website"
+                className="px-3 py-1.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-black font-display font-black text-xs transition-all flex items-center space-x-1.5 shadow-lg shadow-emerald-500/25 hover:scale-105 active:scale-95"
+              >
+                <Radio className="w-3 h-3 text-black animate-pulse" />
+                <span>LIVE DEMO</span>
+                <ArrowUpRight className="w-3 h-3 text-black stroke-[3]" />
+              </a>
+            )}
+
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={e => e.stopPropagation()}
+                title="View Source on GitHub"
+                className="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-mono text-[11px] transition-all flex items-center space-x-1.5 hover:scale-105"
+              >
+                <GitBranch className="w-3 h-3 text-[#A100FF]" />
+                <span>GITHUB</span>
+              </a>
+            )}
+
             {project.canvaUrl && (
               <a
                 href={project.canvaUrl}
@@ -134,7 +171,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
             <button
               onClick={() => onSelectProject(project)}
-              className="flex items-center space-x-1.5 bg-white/10 group-hover:bg-white/20 text-white font-mono text-xs px-3.5 py-1.5 rounded-full border border-white/15 transition-all"
+              className="flex items-center space-x-1.5 bg-white/10 group-hover:bg-white/20 text-white font-mono text-xs px-3.5 py-1.5 rounded-full border border-white/15 transition-all hover:scale-105"
             >
               <span>CASE STUDY</span>
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
