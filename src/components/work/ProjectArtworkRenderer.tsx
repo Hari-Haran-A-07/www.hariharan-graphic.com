@@ -611,6 +611,55 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">GITHUB PAGES LIVE</span>
           </div>
         </div>
+    case 'clothyy-luxury-fashion':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1A160F] via-[#0D0B07] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Fashion Maison Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-amber-200 animate-pulse" />
+              <span className="font-display font-black text-sm tracking-widest text-[#E5D2BA] flex items-center space-x-1.5">
+                <ShoppingBag className="w-4 h-4 text-[#D4AF37]" />
+                <span>CLOTHYYY.COM // GLOBAL MAISON</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-[#D4AF37] px-2.5 py-1 rounded-full bg-amber-950/60 border border-amber-500/30">
+              POLYGLOT MESH
+            </span>
+          </div>
+
+          {/* Center Polyglot & Curated Drops Stage */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-white/10 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">POLYGLOT</span>
+              <div className="font-display font-black text-xl text-white">11 LANGS</div>
+              <span className="font-mono text-[8px] text-[#D4AF37]">MICROSERVICES</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-[#D4AF37]/30 flex flex-col justify-between text-center shadow-lg shadow-amber-950/40">
+              <span className="font-mono text-[9px] text-[#D4AF37]">CURRENCIES</span>
+              <div className="font-mono font-bold text-sm text-white">USD • EUR • JPY</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-amber-200 to-[#D4AF37] h-full w-[90%]" />
+              </div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">REAL-TIME FX</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-white/10 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">FITTING ROOM</span>
+              <div className="font-mono font-bold text-xs text-emerald-400">3D VIRTUAL</div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">RUNWAY DROPS</span>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-white/10 pt-3">
+            <span className="text-[#D4AF37]">HIGH-FASHION POLYGLOT ARCHITECTURE</span>
+            <span className="text-emerald-400">PRODUCTION DEPLOYMENT</span>
+          </div>
+        </div>
       );
 
     default:
