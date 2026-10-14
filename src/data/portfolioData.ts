@@ -92,6 +92,9 @@ export const selectedProjects: ProjectItem[] = [
     canvaUrl: "https://www.canva.com/projects",
     driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
     figmaUrl: "https://www.figma.com",
+    githubUrl: "https://github.com/Hari-Haran-A-07/SOCIALMEDIA-STRATEGY-SYSTEM-",
+    liveDemoUrl: "https://socialmedia-strategy-system.vercel.app",
+    hasLiveDemo: true,
     summary:
       "A complete social media creative infrastructure designed to produce high-engagement Instagram/LinkedIn carousel systems, promotional motion reels, aspect-ratio calibrated templates, and a dynamic creative preview dashboard.",
     problem:
@@ -245,6 +248,9 @@ export const selectedProjects: ProjectItem[] = [
     canvaUrl: "https://www.canva.com/projects",
     driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
     figmaUrl: "https://www.figma.com",
+    githubUrl: "https://github.com/Hari-Haran-A-07/www.sambaleaf.com",
+    liveDemoUrl: "https://www-sambaleaf-com.vercel.app",
+    hasLiveDemo: true,
     summary:
       "Vibrant culinary brand identity and UI/UX ordering system for a gourmet cloud kitchen, combining organic leaf aesthetics with appetizing fiery color palettes and seamless digital ordering.",
     problem:
@@ -312,6 +318,8 @@ export const selectedProjects: ProjectItem[] = [
     layoutStyle: "landscape",
     accentColor: "#F5F5F5",
     githubUrl: "https://github.com/Hari-Haran-A-07/Lux.raw",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/Lux.raw/",
+    hasLiveDemo: true,
     driveUrl: "https://drive.google.com/drive/folders/1E5QzQExQ-VeI8l4lAMfZomgqZhzWsFBd",
     summary:
       "Editorial, dark-mode luxury e-commerce experience designed for high-value merchandise, featuring razor-sharp product cards, minimal typography hierarchy, fluid hover interactions, and microservices checkout.",
