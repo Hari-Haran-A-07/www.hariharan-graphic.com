@@ -1093,6 +1093,82 @@ export const selectedProjects: ProjectItem[] = [
       "Sub-15ms Speed",
     ],
   },
+  {
+    id: "ipl-mega-auction-2026",
+    number: "016",
+    title: "IPL 2026 MEGA AUCTION SIMULATOR & PURSE SYSTEM",
+    subtitle: "Real-time Franchise Bidding Engine, Dynamic Purse Balances & Player Hammer Ticker",
+    category: "WEB",
+    year: "2026",
+    client: "Sports Tech & Interactive Simulation",
+    tools: ["HTML5", "CSS3 Grid", "JavaScript DOM Engine", "Audio SFX Hammer", "Responsive UI"],
+    thumbnail: "ipl-mega-auction-2026",
+    badge: "Sports Simulation",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#3B82F6",
+    githubUrl: "https://github.com/Hari-Haran-A-07/IPLAUCTION2026",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/IPLAUCTION2026/",
+    hasLiveDemo: true,
+    summary:
+      "A high-stakes real-time cricket franchise auction simulation replicating the Indian Premier League mega auction dynamics, complete with interactive franchise paddles (CSK, MI, RCB, KKR), live purse balance calculations, RTM card triggers, and auctioneer hammer sound effects.",
+    problem:
+      "Sports enthusiasts and gaming communities crave interactive simulation of high-pressure bidding rooms rather than passive spreadsheets or delayed television broadcast streams.",
+    concept:
+      "Engineered an interactive auction stage featuring incremental bid ladders (₹20L -> ₹18.50 Cr), real-time team purse deductions, overseas player slot limits, and countdown gavel timers.",
+    visualDirection:
+      "Electrifying stadium broadcast aesthetic: deep floodlit arena blues, championship gold accents, franchise color tokens, and broadcast ticker typography.",
+    typography: [
+      { fontFamily: "Syne", usage: "Franchise Bidding Marquee", sample: "SOLD TO CHENNAI SUPER KINGS // ₹18.50 CR", weight: "Bold 700" },
+      { fontFamily: "Space Grotesk", usage: "Bid Values & Purse Deductions", sample: "CURRENT BID: ₹18,50,00,000 • PURSE REMAINING: ₹32.4 CR", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Player Stats & Career T20 Metrics", sample: "Strike Rate: 154.2 • Wickets: 84 • Economy: 7.12 RPO", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Championship Blue", hex: "#1D4ED8", role: "Primary Stadium Backdrop" },
+      { name: "Auction Gold", hex: "#FACC15", role: "Bid Gavel & High-Tier Players" },
+      { name: "Warning Crimson", hex: "#EF4444", role: "Purse Exhaustion Alert" },
+      { name: "Verified Mint", hex: "#10B981", role: "RTM Card Confirmation" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Auction Mechanics & Logic State Chart",
+        description: "Mapped bidding rules: minimum increments, RTM matching rights, overseas slot maximums, and hammer countdowns.",
+        deliverables: ["State Machine Architecture", "Bidding Rulebook", "Franchise Purse Models"],
+      },
+      {
+        title: "02 — Interactive UI & Paddle Trigger",
+        description: "Built responsive touch-friendly bidding paddle interface simulating authentic table paddle raises.",
+        deliverables: ["Bidding Controls", "Live Team Dashboard", "Sound Effect Synthesis"],
+      },
+      {
+        title: "03 — Player Card Carousel & Filter Engine",
+        description: "Designed tiered player profiles (Marquee, Capped Batsmen, Fast Bowlers, All-rounders, Emerging).",
+        deliverables: ["Player Bio Cards", "Stat Comparison Drawer", "Category Filters"],
+      },
+      {
+        title: "04 — Live GitHub Pages Production Deployment",
+        description: "Optimized vanilla DOM operations and deployed live on GitHub Pages with zero external build dependencies.",
+        deliverables: ["GitHub Pages Hosting", "Zero Dependency DOM", "Mobile Responsive QA"],
+      },
+    ],
+    keyFeatures: [
+      "Real-time franchise paddle bidding engine (CSK, MI, RCB, KKR, SRH, etc.)",
+      "Dynamic purse balance calculations with automatic overdraft protection",
+      "Right-to-Match (RTM) card challenge simulation",
+      "Audio-visual gavel hammer sync with 'Going Once, Going Twice, SOLD!' animations",
+      "Live deployment at hari-haran-a-07.github.io/IPLAUCTION2026",
+    ],
+    results: [
+      "Zero latency domestic bidding response with instantaneous DOM rendering",
+      "Extensive adoption during campus cricket festival tournaments",
+      "100% lightweight vanilla architecture requiring 0 npm dependencies",
+    ],
+    metrics: [
+      "Real-Time Bidding",
+      "10 Franchise Hubs",
+      "GitHub Pages Live",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
