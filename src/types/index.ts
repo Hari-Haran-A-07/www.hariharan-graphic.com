@@ -62,6 +62,8 @@ export interface ProjectItem {
   githubUrl?: string;
   liveDemoUrl?: string;
   videoUrl?: string;
+  hasLiveDemo?: boolean;
+  liveStatus?: 'ONLINE' | 'PRODUCTION' | 'PROTOTYPE';
 
   // Cinematic Case Study Details
   summary: string;
