@@ -1,5 +1,7 @@
-import React from 'react';
-import { Layers, Sparkles, Play, Globe, ShieldCheck, ArrowRight, Activity, Smartphone, Eye } from 'lucide-react';
+import {
+  Layers, Sparkles, Play, Globe, ShieldCheck, ArrowRight, Activity, Smartphone, Eye,
+  Flame, Gauge, Coffee, Utensils, Construction, Trophy, Terminal, Code2, Radio, ShoppingBag, Cpu, CheckCircle2
+} from 'lucide-react';
 import { ProjectItem } from '@/types';
 
 interface ProjectArtworkRendererProps {
@@ -314,9 +316,69 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
 
     default:
       return (
-        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#171717] to-[#0A0A0A] p-6 flex flex-col justify-between">
-          <span className="font-display font-bold text-white">{project.title}</span>
-          <span className="font-mono text-xs text-[#A100FF]">{project.category}</span>
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#121216] via-[#0A0A0E] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div
+            className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl pointer-events-none opacity-20"
+            style={{ backgroundColor: project.accentColor || '#A100FF' }}
+          />
+
+          {/* Top Status Banner */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span
+                className="w-2.5 h-2.5 rounded-full animate-ping"
+                style={{ backgroundColor: project.accentColor || '#00E5FF' }}
+              />
+              <span className="font-mono text-xs font-bold text-white tracking-wider">
+                {project.title}
+              </span>
+            </div>
+
+            {project.liveDemoUrl ? (
+              <span className="font-mono text-[10px] text-emerald-400 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/30 flex items-center space-x-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>LIVE PRODUCTION</span>
+              </span>
+            ) : (
+              <span className="font-mono text-[10px] text-[#A100FF] px-2.5 py-1 rounded-full bg-purple-950/60 border border-purple-500/30">
+                ACTIVE REPOSITORY
+              </span>
+            )}
+          </div>
+
+          {/* Middle Stage Card Preview */}
+          <div className="z-10 my-3 p-4 rounded-2xl bg-black/60 border border-white/10 space-y-2.5">
+            <div className="flex items-center justify-between font-mono text-[10px] text-[#A7A7A7]">
+              <span className="text-[#00E5FF]">ENGINEERING STACK</span>
+              <span>YEAR {project.year}</span>
+            </div>
+            
+            <div className="flex flex-wrap gap-1.5">
+              {project.tools.slice(0, 5).map((tool, idx) => (
+                <span
+                  key={idx}
+                  className="font-mono text-[9px] text-white/90 px-2 py-0.5 rounded bg-white/5 border border-white/10"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+
+            <p className="font-sans text-xs text-[#A7A7A7] line-clamp-2 leading-relaxed">
+              {project.subtitle}
+            </p>
+          </div>
+
+          {/* Bottom Telemetry Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-white/10 pt-3">
+            <span className="text-white/60 truncate max-w-[200px]">
+              {project.liveDemoUrl ? project.liveDemoUrl.replace('https://', '') : `github.com/Hari-Haran-A-07`}
+            </span>
+            <span className="text-emerald-400 flex items-center space-x-1">
+              <CheckCircle2 className="w-3 h-3" />
+              <span>VERIFIED ASSET</span>
+            </span>
+          </div>
         </div>
       );
   }
