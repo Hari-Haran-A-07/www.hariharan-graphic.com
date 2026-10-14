@@ -312,6 +312,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-[#00E5FF]">ZERO ARTIFACTING</span>
           </div>
         </div>
+      );
+
     case 'ak-racing-motorsport':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1C0505] via-[#0D0202] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -366,6 +368,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">WEBGL + AUDIO SYNTH</span>
           </div>
         </div>
+      );
+
     case 'hot-cool-shake':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#261305] via-[#120802] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -415,6 +419,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">LIVE AT HOTCOOLSHAKE-IN.VERCEL.APP</span>
           </div>
         </div>
+      );
+
     case 'friends-fried-chicken':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#2E1202] via-[#140601] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -464,6 +470,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">LIVE AT FFC-INDOL.VERCEL.APP</span>
           </div>
         </div>
+      );
+
     case 'sri-neya-crane':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#262002] via-[#120F01] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -513,6 +521,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">LIVE AT WWWSNCIN.VERCEL.APP</span>
           </div>
         </div>
+      );
+
     case 'ipl-mega-auction-2026':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#081738] via-[#040C1D] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -562,6 +572,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">GITHUB PAGES LIVE</span>
           </div>
         </div>
+      );
+
     case 'novitas-2k26-hong-kong':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1C052B] via-[#0B0212] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -611,6 +623,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">GITHUB PAGES LIVE</span>
           </div>
         </div>
+      );
+
     case 'clothyy-luxury-fashion':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1A160F] via-[#0D0B07] to-black p-6 relative overflow-hidden flex flex-col justify-between">
@@ -660,6 +674,8 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">PRODUCTION DEPLOYMENT</span>
           </div>
         </div>
+      );
+
     case 'hariharan-fullstack-portfolio':
       return (
         <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#041F10] via-[#020D07] to-black p-6 relative overflow-hidden flex flex-col justify-between">
