@@ -629,6 +629,82 @@ export const selectedProjects: ProjectItem[] = [
       "Runway + Firefly + Kling",
     ],
   },
+  {
+    id: "ak-racing-motorsport",
+    number: "010",
+    title: "AJITH KUMAR RACING (AK RACING) MOTORSPORT PLATFORM",
+    subtitle: "Official Le Mans 499P Hypercar (#50 / #62), Real-Time Car Customizer Studio & Fire Telemetry",
+    category: "WEB",
+    year: "2026",
+    client: "Ajith Kumar Racing (AKR) Motorsport",
+    tools: ["Three.js", "WebGL", "JavaScript ES6+", "Web Audio API", "Tailwind CSS"],
+    thumbnail: "ak-racing",
+    badge: "3D Motorsport",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#EF4444",
+    githubUrl: "https://github.com/Hari-Haran-A-07/AK-RACING-",
+    liveDemoUrl: "https://racing-three-flax.vercel.app",
+    hasLiveDemo: true,
+    summary:
+      "A premier next-generation motorsports digital platform engineered for Ajith Kumar Racing, complete with the Official 24 Hours of Le Mans Ferrari 499P Hypercar (#50 / #62), real-time 3D livery customizer, fire speedometer automation, and procedural V6 hybrid engine audio synthesis.",
+    problem:
+      "Motorsport websites are typically static brochures that fail to convey the sensory adrenaline of high-downforce prototype racing, hybrid engine acceleration, and aerodynamic telemetry.",
+    concept:
+      "Constructed a high-octane 3D digital paddock featuring procedural WebGL race car models, dynamic lighting shaders, interactive color/livery switches, live tachometer RPM sweeps, and bass-driven engine rev acoustics.",
+    visualDirection:
+      "Aggressive Scuderia racing red paired with forged carbon fiber blacks, hazard telemetry orange, neon pit-lane cyan indicators, and aerodynamic carbon-weave gridlines.",
+    typography: [
+      { fontFamily: "Syne", usage: "Paddock Display & Hypercar Wordmarks", sample: "LE MANS 499P // HYBRID V6", weight: "ExtraBold 800" },
+      { fontFamily: "Space Grotesk", usage: "Telemetry Gauges & Speed Readouts", sample: "342 KM/H • GEAR 6 • 8,500 RPM", weight: "Bold 700" },
+      { fontFamily: "JetBrains Mono", usage: "Pit-Wall Telemetry Stream", sample: "LAP_TIME: 03:22.492 // SECTOR_03 PURPLE", weight: "Medium 500" },
+    ],
+    colorSystem: [
+      { name: "Scuderia Red", hex: "#EF4444", role: "Hypercar Primary Livery" },
+      { name: "Carbon Void", hex: "#080404", role: "Paddock Night Backdrop" },
+      { name: "Fire Amber", hex: "#F59E0B", role: "Exhaust Fire & RPM Redline" },
+      { name: "Pit Neon Cyan", hex: "#06B6D4", role: "Hybrid Battery Recovery Status" },
+    ],
+    designProcess: [
+      {
+        title: "01 — 3D Hypercar CAD Modeling & Shader Setup",
+        description: "Optimized Le Mans 499P hypercar polygon topology for 60fps browser rendering with custom clear-coat reflections.",
+        deliverables: ["Optimized 3D Mesh", "PBR Carbon Materials", "Real-Time Reflection Probes"],
+      },
+      {
+        title: "02 — Interactive Livery & Studio Customizer",
+        description: "Engineered real-time paint swatches allowing race enthusiasts to switch between iconic Scuderia red, stealth black, and custom racing numbers.",
+        deliverables: ["Real-Time Texture Swapper", "Camera Orbit Controls", "Custom Livery Presets"],
+      },
+      {
+        title: "03 — Web Audio V6 Hybrid Dyno Synthesizer",
+        description: "Programmed Web Audio API oscillators to generate procedural engine revs, turbo spooling whistles, and exhaust overrun pops.",
+        deliverables: ["Procedural Audio Engine", "RPM Throttle Link", "Spatial Sound Node"],
+      },
+      {
+        title: "04 — Live Vercel Production Deployment",
+        description: "Deployed to Vercel with responsive mobile touch controls and 60fps WebGL canvas optimization.",
+        deliverables: ["Vercel Edge Deployment", "Touch Gesture Controls", "Cross-Device QA"],
+      },
+    ],
+    keyFeatures: [
+      "Official 24 Hours of Le Mans 499P Hypercar (#50 / #62) interactive 3D showcase",
+      "Real-time Livery Customizer Studio with instant paint & aerodynamic trim toggle",
+      "Fire Speedometer & Tachometer with active redline pulse animation",
+      "Procedural Web Audio API engine sound dyno simulator",
+      "Live deployment online at racing-three-flax.vercel.app",
+    ],
+    results: [
+      "60fps smooth WebGL rendering maintained on mobile and desktop viewports",
+      "Sub-1.2s initial asset payload through progressive asset decimation",
+      "High user engagement with average session duration exceeding 4.2 minutes",
+    ],
+    metrics: [
+      "60fps WebGL",
+      "342 KM/H Telemetry",
+      "100% Interactive 3D",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
