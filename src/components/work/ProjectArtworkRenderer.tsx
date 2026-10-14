@@ -562,6 +562,55 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">GITHUB PAGES LIVE</span>
           </div>
         </div>
+    case 'novitas-2k26-hong-kong':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#1C052B] via-[#0B0212] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-fuchsia-600/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Symposium Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
+              <span className="font-display font-black text-sm tracking-wider text-white flex items-center space-x-1.5">
+                <Globe className="w-4 h-4 text-cyan-400" />
+                <span>NOVITAS 2K26 // HONG KONG</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-fuchsia-300 px-2.5 py-1 rounded-full bg-fuchsia-950/80 border border-fuchsia-500/40">
+              INT'L SYMPOSIUM
+            </span>
+          </div>
+
+          {/* Center Technical Tracks & Registration Stage */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-fuchsia-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">TRACKS</span>
+              <div className="font-display font-black text-xl text-fuchsia-400">08 EVENTS</div>
+              <span className="font-mono text-[8px] text-cyan-400">AI & CYBERSEC</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-cyan-500/30 flex flex-col justify-between text-center shadow-lg shadow-fuchsia-950/50">
+              <span className="font-mono text-[9px] text-cyan-400">REGISTRATIONS</span>
+              <div className="font-display font-black text-xl text-white">500+</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-fuchsia-400 to-cyan-400 h-full w-[85%]" />
+              </div>
+              <span className="font-mono text-[8px] text-emerald-300">QR PASS ACTIVE</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-fuchsia-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">DELEGATES</span>
+              <div className="font-mono font-bold text-xs text-amber-300">GLOBAL SUMMIT</div>
+              <span className="font-mono text-[8px] text-fuchsia-300">CYBER AESTHETIC</span>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-fuchsia-950/60 pt-3">
+            <span className="text-cyan-400">INTERNATIONAL SYMPOSIUM PLATFORM</span>
+            <span className="text-emerald-400">GITHUB PAGES LIVE</span>
+          </div>
+        </div>
       );
 
     default:
