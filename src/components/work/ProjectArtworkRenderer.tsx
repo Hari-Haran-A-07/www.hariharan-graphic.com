@@ -464,6 +464,55 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">LIVE AT FFC-INDOL.VERCEL.APP</span>
           </div>
         </div>
+    case 'sri-neya-crane':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#262002] via-[#120F01] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-yellow-500/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Industrial Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 animate-ping" />
+              <span className="font-display font-black text-sm tracking-wider text-yellow-400 flex items-center space-x-1.5">
+                <Construction className="w-4 h-4 text-yellow-400" />
+                <span>SRI NEYA CRANE SERVICES // SNC</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-yellow-300 px-2.5 py-1 rounded-full bg-yellow-950/80 border border-yellow-500/40">
+              HEAVY RIGGING 250T
+            </span>
+          </div>
+
+          {/* Center Crane Boom & Capacity Gauges */}
+          <div className="z-10 py-2 grid grid-cols-3 gap-3 my-auto">
+            <div className="p-3 rounded-2xl bg-black/80 border border-yellow-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">RIGGING TONNAGE</span>
+              <div className="font-display font-black text-2xl text-yellow-400">250T</div>
+              <span className="font-mono text-[8px] text-amber-400">HYDRAULIC CRANES</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-yellow-500/30 flex flex-col justify-between text-center shadow-lg shadow-yellow-950/50">
+              <span className="font-mono text-[9px] text-yellow-400">BOOM EXTENSION</span>
+              <div className="font-display font-black text-xl text-yellow-500">72M</div>
+              <div className="w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                <div className="bg-gradient-to-r from-amber-400 to-yellow-300 h-full w-[85%]" />
+              </div>
+              <span className="font-mono text-[8px] text-[#A7A7A7]">45° BOOM RADIUS</span>
+            </div>
+
+            <div className="p-3 rounded-2xl bg-black/80 border border-yellow-500/20 flex flex-col justify-between text-center">
+              <span className="font-mono text-[9px] text-[#A7A7A7]">DISPATCH</span>
+              <div className="font-mono font-bold text-xs text-emerald-400">24/7 HIGHWAY</div>
+              <span className="font-mono text-[8px] text-yellow-300">BREAKDOWN GPS</span>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-yellow-950/60 pt-3">
+            <span className="text-yellow-400">INDUSTRIAL MOBILE CRANES & RECOVERY</span>
+            <span className="text-emerald-400">LIVE AT WWWSNCIN.VERCEL.APP</span>
+          </div>
+        </div>
       );
 
     default:
