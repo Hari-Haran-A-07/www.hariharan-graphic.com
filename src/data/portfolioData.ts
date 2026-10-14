@@ -781,6 +781,82 @@ export const selectedProjects: ProjectItem[] = [
       "Sub-80ms API Speed",
     ],
   },
+  {
+    id: "friends-fried-chicken",
+    number: "012",
+    title: "FRIENDS FRIED CHICKEN (FFC) FOOD-TECH PLATFORM",
+    subtitle: "Interactive Chicken Customization Studio, 3D Spice Chamber & Live Kitchen Telemetry",
+    category: "WEB",
+    year: "2026",
+    client: "FFC Gourmet Food-Tech",
+    tools: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "REST APIs"],
+    thumbnail: "friends-fried-chicken",
+    badge: "Food-Tech Web",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#F97316",
+    githubUrl: "https://github.com/Hari-Haran-A-07/FFC",
+    liveDemoUrl: "https://ffc-indol.vercel.app",
+    hasLiveDemo: true,
+    summary:
+      "A premium food-tech e-commerce platform and interactive chicken customization experience featuring 'You Create It. We Fry It.', 3D spice chamber sliders, audio crunch feedback, and real-time kitchen fryer telemetry.",
+    problem:
+      "Conventional fast food ordering websites lack tactile sensory interaction, forcing users through dry text menus without visual seasoning feedback or real-time frying updates.",
+    concept:
+      "Built a gamified gourmet food-tech experience where patrons pick cuts, calibrate batter crunch levels, apply custom spice dustings, and watch their order progress through oil-temperature calibrated live queues.",
+    visualDirection:
+      "Appetite-stimulating fiery golden amber, deep smoky charcoal, cayenne red badges, and crispy texture overlays with tactile motion springs.",
+    typography: [
+      { fontFamily: "Syne", usage: "Food-Tech Banner Headings", sample: "YOU CREATE IT. WE FRY IT.", weight: "ExtraBold 800" },
+      { fontFamily: "Space Grotesk", usage: "Spice Levels & Fryer Heat", sample: "375°F OIL BATH • LEVEL 4 GHOST PEPPER", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Menu Ingredients & Nutritional Spec", sample: "100% Farm-fresh tender cuts marinated in secret herbs for 12 hours.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Crispy Gold", hex: "#F59E0B", role: "Primary Appetite Trigger" },
+      { name: "Fiery Cayenne", hex: "#EA580C", role: "Spice Scale & CTA" },
+      { name: "Smoky Charcoal", hex: "#0E0E10", role: "Dark Mode Floor" },
+      { name: "Herbal Green", hex: "#10B981", role: "Fresh Guarantee Badge" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Interactive Spice Chamber Wireframes",
+        description: "Prototyped multi-tier spice sliders with immediate visual seasoning particle feedback.",
+        deliverables: ["Figma Wireframes", "Particle Animation Prototype", "Sound FX Tokens"],
+      },
+      {
+        title: "02 — Component Architecture & Framer Motion",
+        description: "Constructed fluid spring animations for menu navigation, bucket customizers, and cart trays.",
+        deliverables: ["React Components", "Framer Motion Variants", "Acoustic Feedback Hook"],
+      },
+      {
+        title: "03 — Live Fryer Telemetry Integration",
+        description: "Implemented real-time order tracking with animated oil bath temperature and countdown timers.",
+        deliverables: ["Kitchen Queue State", "WebSockets Order Stream", "Status Polling"],
+      },
+      {
+        title: "04 — Production Vercel Deployment",
+        description: "Deployed to Vercel edge network with responsive mobile optimization and 100% Lighthouse SEO.",
+        deliverables: ["Vercel Production Edge", "PWA Manifest", "Speed Insights"],
+      },
+    ],
+    keyFeatures: [
+      "'You Create It. We Fry It.' interactive flavor builder and custom dredge engine",
+      "Tactile crunch acoustic sound feedback on ordering actions",
+      "Real-time kitchen fryer telemetry (375°F Oil Bath queue tracker)",
+      "Instant checkout with dynamic combo discounts and nutrition breakdown",
+      "Live production website at ffc-indol.vercel.app",
+    ],
+    results: [
+      "27% boost in add-on item conversions using interactive customizer",
+      "Under 1.1-second page loads across 4G mobile devices",
+      "Flawless user feedback during beta tasting launch",
+    ],
+    metrics: [
+      "Food-Tech Customizer",
+      "98.4% Crispy Index",
+      "Live on Vercel",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
