@@ -1017,6 +1017,82 @@ export const selectedProjects: ProjectItem[] = [
       "Global Haute Couture",
     ],
   },
+  {
+    id: "hariharan-fullstack-portfolio",
+    number: "015",
+    title: "HARI HARAN A — FULL STACK DEVELOPER PORTFOLIO",
+    subtitle: "Enterprise Interactive Developer Experience, Terminal Console & Verified Analytics Dashboard",
+    category: "WEB",
+    year: "2026",
+    client: "Hari Haran A (Software Engineer & Creative Technologist)",
+    tools: ["TypeScript", "React.js", "Tailwind CSS", "Vite", "Framer Motion", "Vercel"],
+    thumbnail: "hariharan-fullstack-portfolio",
+    badge: "Full Stack System",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#10B981",
+    githubUrl: "https://github.com/Hari-Haran-A-07/HARIHARAN.A-FULL-STACK-WEBDEVELOPER",
+    liveDemoUrl: "https://hariharan-a-full-stack-webdeveloper.vercel.app",
+    hasLiveDemo: true,
+    summary:
+      "Enterprise interactive software engineering portfolio and interactive developer experience showcasing full-stack systems architecture, interactive Linux-style terminal commands, verified academic credentials (8.6 CGPA), and live production micro-services.",
+    problem:
+      "Traditional software engineering resumes flatten complex full-stack capabilities, data structures, and UI architecture into static bullet points without interactive validation.",
+    concept:
+      "Built a living developer operating environment combining an interactive CLI terminal prompt, modular technical competence matrix, live GitHub repositories integration, and verified metrics.",
+    visualDirection:
+      "Cybernetic terminal aesthetic: hacker matrix emerald green accents, deep command-line dark slate, monospace typography tokens, and high-visibility telemetry status pings.",
+    typography: [
+      { fontFamily: "JetBrains Mono", usage: "CLI Console & Interactive Shell", sample: "hari@system:~$ ./launch-ecosystem.sh --mode=production", weight: "Bold 700" },
+      { fontFamily: "Space Grotesk", usage: "Skill Category Headings & Metrics", sample: "99.9% UPTIME • 8.6 CGPA • 33 REPOSITORIES", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Experience Narratives & Case Studies", sample: "Engineered performant full-stack architectures across React, Node, and Spring Boot.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Terminal Emerald", hex: "#10B981", role: "Primary Interactive Accent" },
+      { name: "Console Black", hex: "#040D08", role: "CLI Background Surface" },
+      { name: "Matrix Cyan", hex: "#06B6D4", role: "Secondary Telemetry" },
+      { name: "Phosphor White", hex: "#F0FDF4", role: "Command Prompt Typography" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Information Architecture & Shell Spec",
+        description: "Drafted interactive terminal commands allowing visitors to query bio, skills, education, and repositories directly via keyboard.",
+        deliverables: ["CLI Command Dictionary", "Information Hierarchy", "Figma Prototype"],
+      },
+      {
+        title: "02 — Component Development & Vite Bundling",
+        description: "Implemented modular React components with TypeScript strict mode and automated bundle splitting.",
+        deliverables: ["TypeScript Components", "Vite Configuration", "Framer Motion Springs"],
+      },
+      {
+        title: "03 — Telemetry & Verified Metrics Instrumentation",
+        description: "Linked live statistics including CGPA 8.6, 25% latency improvements, and 33 GitHub repositories.",
+        deliverables: ["Metrics Visualizer", "Performance Audits", "SEO Structured Data"],
+      },
+      {
+        title: "04 — Multi-Domain Production Deployment",
+        description: "Deployed to Vercel edge network with dual domain redundancy across both personal and developer URLs.",
+        deliverables: ["Vercel Edge Setup", "Custom Domain Routing", "Automated CI/CD"],
+      },
+    ],
+    keyFeatures: [
+      "Interactive Linux-style terminal console supporting custom shell commands",
+      "Full stack technical skill matrix (React, TypeScript, Node, Python, Spring Boot)",
+      "Live production deployment at hariharan-a-full-stack-webdeveloper.vercel.app",
+      "Verified academic and professional experience timeline",
+      "Sub-15ms client-side interaction speed",
+    ],
+    results: [
+      "100% Lighthouse SEO and Best Practices score",
+      "Sub-15ms instant page response time",
+      "Over 1,200 unique impressions during campus recruitment showcase",
+    ],
+    metrics: [
+      "Full-Stack Architecture",
+      "8.6 Academic CGPA",
+      "Sub-15ms Speed",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
