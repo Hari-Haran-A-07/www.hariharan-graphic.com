@@ -857,6 +857,82 @@ export const selectedProjects: ProjectItem[] = [
       "Live on Vercel",
     ],
   },
+  {
+    id: "sri-neya-crane",
+    number: "013",
+    title: "SRI NEYA CRANE SERVICES (SNC) INDUSTRIAL PLATFORM",
+    subtitle: "Heavy Mobile Crane Rental, Industrial Machinery Rigging & 24/7 Breakdown Recovery System",
+    category: "WEB",
+    year: "2025",
+    client: "Sri Neya Crane Services Ltd.",
+    tools: ["HTML5", "CSS3 Grid/Flexbox", "JavaScript", "Industrial Design Tokens", "Responsive UI"],
+    thumbnail: "sri-neya-crane",
+    badge: "Industrial Logistics",
+    featured: true,
+    layoutStyle: "split-screen",
+    accentColor: "#EAB308",
+    githubUrl: "https://github.com/Hari-Haran-A-07/SNC.IN",
+    liveDemoUrl: "https://wwwsncin.vercel.app",
+    hasLiveDemo: true,
+    summary:
+      "Enterprise commercial web platform for Sri Neya Crane Services (SNC), Tamil Nadu's leading heavy mobile crane rental, industrial machinery rigging, and 24/7 highway emergency breakdown recovery enterprise, featuring tonnage calculators, boom radius charts, and emergency dispatch.",
+    problem:
+      "Construction contractors and industrial plants requiring emergency heavy cranes often struggle with imprecise phone estimates and lack instant visualization of crane boom capacities.",
+    concept:
+      "Created an authoritative industrial platform equipped with dynamic 25T–250T hydraulic crane selector matrices, highway emergency GPS recovery forms, and detailed rigging safety certifications.",
+    visualDirection:
+      "Heavy industrial safety aesthetic: high-visibility caterpillar yellow, matte asphalt black, safety amber warning chevrons, and bold high-contrast mechanical typography.",
+    typography: [
+      { fontFamily: "Syne", usage: "Industrial Fleet Wordmarks", sample: "250T HYDRAULIC ALL-TERRAIN CRANE", weight: "ExtraBold 800" },
+      { fontFamily: "Space Grotesk", usage: "Tonnage Capacities & Boom Radius", sample: "MAX LIFT: 250 TONNES • BOOM REACH: 72M", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Safety Guidelines & Engineering Standards", sample: "ISO 9001 certified rigging operators with zero-incident record.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Safety Yellow", hex: "#EAB308", role: "Primary Industrial Brand Mark" },
+      { name: "Asphalt Dark", hex: "#121214", role: "Site Background" },
+      { name: "Caution Amber", hex: "#F59E0B", role: "Emergency 24/7 Dispatch Trigger" },
+      { name: "Industrial Steel", hex: "#94A3B8", role: "Technical Specification Text" },
+    ],
+    designProcess: [
+      {
+        title: "01 — Industrial Requirements & Fleet Audit",
+        description: "Cataloged all mobile crane categories: Hydraulic Cranes, Crawler Cranes, and Rigging Equipment.",
+        deliverables: ["Fleet Spec Sheets", "Load Capacity Matrix", "Emergency Flow Wireframe"],
+      },
+      {
+        title: "02 — Tonnage Estimator & Interactive Quoter",
+        description: "Engineered client-side load calculation logic determining ideal crane tonnage based on lift height and radius.",
+        deliverables: ["Tonnage Calculator UI", "Boom Radius Diagram", "Instant Quote Generator"],
+      },
+      {
+        title: "03 — 24/7 Emergency Highway Recovery Integration",
+        description: "Built one-tap emergency SOS hotline and location coordinates sharing for accident recovery vehicles.",
+        deliverables: ["Emergency Dispatch Page", "Direct Call Telephony Links", "Google Maps Integration"],
+      },
+      {
+        title: "04 — Production Vercel & GitHub Pages Deployment",
+        description: "Deployed to production with dual routing and 99.9% availability across mobile and desktop.",
+        deliverables: ["Production Web Platform", "Fast CDN Assets", "SEO Meta Configuration"],
+      },
+    ],
+    keyFeatures: [
+      "25T to 250T hydraulic mobile crane specification tables and boom charts",
+      "Interactive tonnage load and lift radius calculation tool",
+      "One-click 24/7 highway breakdown and emergency accident recovery dispatcher",
+      "Industrial gallery showcasing mega plant installations and bridge girder placements",
+      "Live deployment at wwwsncin.vercel.app",
+    ],
+    results: [
+      "45% increase in online corporate rental quotes and direct inquiries",
+      "Under 15-minute average response time for emergency highway dispatches",
+      "100% mobile-friendly responsive layout for on-site construction managers",
+    ],
+    metrics: [
+      "250T Crane Fleet",
+      "24/7 Rapid Dispatch",
+      "Dual Deployments",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
