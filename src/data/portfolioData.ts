@@ -1245,6 +1245,107 @@ export const selectedProjects: ProjectItem[] = [
       "GitHub Pages Live",
     ],
   },
+  {
+    id: "round-3-mega-auction",
+    number: "018",
+    title: "ROUND 3 MEGA AUCTION BIDDING ARENA",
+    subtitle: "Accelerated Round 3 Sudden-Death Bidding, Roster Minimum Thresholds & Emergency Tie-Breaker Engine",
+    category: "WEB",
+    year: "2026",
+    client: "Cricket Esports & League Simulations",
+    tools: ["HTML5", "CSS3 Grid", "Vanilla JavaScript", "Audio SFX", "Responsive UI"],
+    thumbnail: "round-3-mega-auction",
+    badge: "Auction Arena",
+    featured: false,
+    layoutStyle: "portrait",
+    accentColor: "#2563EB",
+    githubUrl: "https://github.com/Hari-Haran-A-07/round-3-mega-auction",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/round-3-mega-auction/",
+    hasLiveDemo: true,
+    summary:
+      "A fast-paced Round 3 auction endgame simulator designed for cricket leagues when franchises must scramble to fulfill mandatory squad quotas (18-25 players) within tight purse constraints under accelerated gavel timers.",
+    problem:
+      "Endgame auction rounds operate under unique time pressure where franchise managers frequently run out of budget or fail to meet mandatory squad thresholds.",
+    concept:
+      "Constructed a sudden-death bidding dashboard showing remaining roster slots, base price speed-rounds, and instant tie-breaker algorithms.",
+    visualDirection:
+      "Electric night-match blue, warning red countdown alerts, neon amber bid numbers, and clear roster completion gauges.",
+    typography: [
+      { fontFamily: "Syne", usage: "Accelerated Round Titles", sample: "ROUND 3 // ACCELERATED BIDDING", weight: "Bold 700" },
+      { fontFamily: "Space Grotesk", usage: "Roster Slot Countdowns", sample: "SQUAD REQUIREMENT: 3 PLAYERS • TIME: 10s", weight: "Bold 700" },
+      { fontFamily: "Inter", usage: "Player Pool Specifications", sample: "Uncapped domestic talents & reserve overseas wicketkeepers.", weight: "Regular 400" },
+    ],
+    colorSystem: [
+      { name: "Arena Blue", hex: "#2563EB", role: "Primary Background Aura" },
+      { name: "Sudden Death Amber", hex: "#F59E0B", role: "Speed Round Ticker" },
+      { name: "Quota Green", hex: "#10B981", role: "Roster Met Indicator" },
+    ],
+    keyFeatures: [
+      "Accelerated 10-second sudden death bidding countdown",
+      "Dynamic roster minimum validation tracker (18 to 25 players)",
+      "Automated base-price speed auctioning",
+      "Live deployment at hari-haran-a-07.github.io/round-3-mega-auction",
+    ],
+    results: [
+      "Sub-millisecond DOM update speed during rapid 10s bidding rounds",
+      "Used extensively in fantasy league community mock drafts",
+    ],
+    metrics: [
+      "10s Speed Bidding",
+      "Squad Quota Tracker",
+      "GitHub Pages Live",
+    ],
+  },
+  {
+    id: "ipl-auction-credit",
+    number: "019",
+    title: "IPL AUCTION CREDIT & FRANCHISE FINANCIAL CONTROLLER",
+    subtitle: "Real-time Budget Purse Ledger, Salary Cap Enforcement & Franchise Credit Ledger",
+    category: "WEB",
+    year: "2026",
+    client: "League Financial Engineering",
+    tools: ["HTML5", "CSS3 Flexbox", "JavaScript Financial Logic", "Responsive UI"],
+    thumbnail: "ipl-auction-credit",
+    badge: "Financial Engine",
+    featured: false,
+    layoutStyle: "portrait",
+    accentColor: "#10B981",
+    githubUrl: "https://github.com/Hari-Haran-A-07/IPL-AUCTION-CREDIT",
+    liveDemoUrl: "https://hari-haran-a-07.github.io/IPL-AUCTION-CREDIT/",
+    hasLiveDemo: true,
+    summary:
+      "A financial accounting ledger and purse balance controller for tournament organizers, enforcing salary cap regulations, player contract installments, and franchise credit limits with instantaneous balance verification.",
+    problem:
+      "Tournament administrators need tamper-proof real-time audit trails during live player auctions to guarantee no franchise exceeds strict financial credit regulations.",
+    concept:
+      "Created an interactive financial ledger with automatic credit overdraft prevention, debit transaction logs, and real-time franchise purse meters.",
+    visualDirection:
+      "Financial terminal aesthetic: fintech emerald greens, clean charcoal ledger tables, and high-visibility monetary figures.",
+    typography: [
+      { fontFamily: "Space Grotesk", usage: "Financial Account Headings", sample: "FRANCHISE CREDIT LEDGER // 2026", weight: "Bold 700" },
+      { fontFamily: "JetBrains Mono", usage: "Purse Balance Numbers", sample: "LEDGER_BALANCE: ₹12,45,00,000 [VERIFIED]", weight: "Bold 700" },
+    ],
+    colorSystem: [
+      { name: "Ledger Mint", hex: "#10B981", role: "Positive Balance Accent" },
+      { name: "Dark Vault", hex: "#0A0F0D", role: "Ledger Table Floor" },
+      { name: "Alert Crimson", hex: "#EF4444", role: "Credit Cap Breach" },
+    ],
+    keyFeatures: [
+      "Real-time franchise budget purse debit and credit tracker",
+      "Automated salary cap regulatory compliance engine",
+      "Exportable transaction audit logs",
+      "Live deployment at hari-haran-a-07.github.io/IPL-AUCTION-CREDIT",
+    ],
+    results: [
+      "100% mathematical precision across multi-round high-volume bidding simulations",
+      "Zero calculation latency on client-side ledger entries",
+    ],
+    metrics: [
+      "Purse Financial Ledger",
+      "100% Rule Compliance",
+      "GitHub Pages Live",
+    ],
+  },
 ];
 
 export const experienceTimeline: ExperienceItem[] = [
