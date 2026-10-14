@@ -660,6 +660,59 @@ export const ProjectArtworkRenderer: React.FC<ProjectArtworkRendererProps> = ({ 
             <span className="text-emerald-400">PRODUCTION DEPLOYMENT</span>
           </div>
         </div>
+    case 'hariharan-fullstack-portfolio':
+      return (
+        <div className="w-full h-full min-h-[280px] bg-gradient-to-br from-[#041F10] via-[#020D07] to-black p-6 relative overflow-hidden flex flex-col justify-between">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Top Terminal Header */}
+          <div className="flex items-center justify-between z-10">
+            <div className="flex items-center space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
+              <span className="font-mono font-black text-sm tracking-wider text-emerald-400 flex items-center space-x-1.5">
+                <Terminal className="w-4 h-4 text-emerald-400" />
+                <span>HARI HARAN A // FULL STACK TERMINAL</span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-emerald-300 px-2.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40">
+              SYS_STATUS: ONLINE
+            </span>
+          </div>
+
+          {/* Center Bash Command & Architecture Metrics */}
+          <div className="z-10 py-2 space-y-2 my-auto">
+            <div className="p-3 rounded-2xl bg-black/85 border border-emerald-500/20 font-mono text-xs space-y-1">
+              <div className="text-emerald-400 flex items-center space-x-2">
+                <span className="text-[#A7A7A7]">hari@portfolio:~$</span>
+                <span className="text-white font-bold">./launch-ecosystem.sh --mode=production</span>
+              </div>
+              <div className="text-[#A7A7A7] text-[10px] pl-4">
+                [OK] Microservices linked • [OK] 33 Repositories indexed • [OK] 99.9% Uptime
+              </div>
+            </div>
+
+            <div className="grid grid-cols-3 gap-2">
+              <div className="p-2 rounded-xl bg-black/60 border border-emerald-500/20 text-center">
+                <div className="font-mono text-[9px] text-[#A7A7A7]">LATENCY</div>
+                <div className="font-mono font-bold text-xs text-emerald-400">14ms</div>
+              </div>
+              <div className="p-2 rounded-xl bg-black/60 border border-emerald-500/20 text-center">
+                <div className="font-mono text-[9px] text-[#A7A7A7]">CGPA</div>
+                <div className="font-mono font-bold text-xs text-cyan-400">8.6 / 10</div>
+              </div>
+              <div className="p-2 rounded-xl bg-black/60 border border-emerald-500/20 text-center">
+                <div className="font-mono text-[9px] text-[#A7A7A7]">STACK</div>
+                <div className="font-mono font-bold text-xs text-purple-400">FULL-STACK</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between z-10 font-mono text-[10px] text-[#A7A7A7] border-t border-emerald-950/60 pt-3">
+            <span className="text-emerald-400">SOFTWARE ENGINEER • FULL STACK ARCHITECT</span>
+            <span className="text-cyan-400">VERCEL DEPLOYMENT LIVE</span>
+          </div>
+        </div>
       );
 
     default:
